@@ -1,0 +1,100 @@
+.hero {
+  background-image: url("../public/hero.png");
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  grid-column: 2/-1;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: contrast(0.8);
+  display: grid;
+  grid-template-areas:
+    "A B C"
+    "D E F"
+    "G H J"
+    "K L M";
+  grid-template-rows: 50px repeat(3, auto);
+  grid-template-columns: 30px repeat(2, auto);
+}
+.title {
+  grid-area: E;
+  width: 165px;
+  height: 165px;
+  background-color: var(--primary-green-02);
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+  position: relative;
+}
+.title h1 {
+  font-size: 55px;
+  font-family: var(--title-font);
+  font-weight: bold;
+}
+.catch {
+  font-size: 55px;
+  font-family: var(--title-font);
+  color: var(--grey);
+  filter: opacity(0.5);
+  /* filter: opacity(0.5); */
+}
+.catch1 {
+  justify-self: baseline;
+  grid-column: 3/-1;
+  grid-row: 2/4;
+  writing-mode: vertical-lr;
+  justify-self: flex-end;
+}
+.catch2 {
+  justify-self: flex-end;
+  grid-area: 3/2/4/3;
+}
+.engawaline {
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+}
+.line {
+  width: 78px;
+  height: 10px;
+  background-color: var(--primary-green-02);
+}
+.tate {
+  transform: rotateY(90);
+  transform: translate(39px, -44px) rotate(90deg);
+}
+.catch h2 {
+  font-family: var(--en-font);
+  font-size: 42px;
+  color: var(--grey);
+}
+.catch h2:first-child {
+  transform: rotateZ(90deg);
+}
+.links {
+  display: flex;
+  column-gap: 10px;
+  grid-area: 3/2/4/3;
+}
+.icon svg {
+  justify-self: flex-end;
+  align-self: center;
+  background-color: var(--primary-green-02);
+  color: var(--white);
+  border-radius: 0.2rem;
+  padding: 0.1rem;
+}
+.herobtn {
+  justify-self: flex-start;
+  align-self: flex-start;
+  grid-area: L;
+  font-size: 19px;
+  color: var(--white);
+  background-color: var(--accent-clr);
+  padding: 7px 21px;
+  border-radius: 24px;
+  width: 160px;
+  font-weight: 600;
+}

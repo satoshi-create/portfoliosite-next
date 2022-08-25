@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Hero from "../components/Hero";
 
 const index = () => {
   return (
-    <div>index</div>
-  )
-}
+    <>
+      <Hero />
+    </>
+  );
+};
 
-export default index
+export default index;

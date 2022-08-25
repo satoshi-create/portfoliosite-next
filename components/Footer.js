@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
-import socialLinks from "../libs//socialLinks";
+import socialLinks from "../libs/socialLinks";
+import SocialLinks from "./SocialLinks";
 import Link from "next/link";
 
 const Footer = () => {
@@ -16,9 +17,9 @@ const Footer = () => {
             const { name, icon, path } = item;
             return (
               <li key={index}>
-                <Link href={path}>
-                  <a>{icon}</a>
-                </Link>
+                <socialLinks href={path}>
+                  <a className={styles.icon}>{icon}</a>
+                </socialLinks>
               </li>
             );
           })}

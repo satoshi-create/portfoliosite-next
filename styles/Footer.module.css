@@ -7,7 +7,6 @@
 }
 .center {
   grid-row: 1;
-  text-align: ;
 }
 .title {
   display: flex;
@@ -30,12 +29,13 @@
   justify-content: center;
   column-gap: 10px;
 }
-.links svg {
+.icon svg {
   background-color: var(--white);
   color: var(--black);
   border-radius: 0.2rem;
   padding: 0.1rem;
 }
+
 .copyright {
   grid-row: 1;
   justify-self: center;

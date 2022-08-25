@@ -1,6 +1,6 @@
 .hero {
   background-image: url("../public/hero.png");
-  height: 90vh;
+  height: 80vh;
   background-size: cover;
   background-position: center;
   grid-column: 2/-1;

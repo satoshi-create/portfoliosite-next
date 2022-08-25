@@ -45,7 +45,6 @@
   grid-column: 3/-1;
   grid-row: 2/4;
   writing-mode: vertical-lr;
-  justify-self: flex-end;
 }
 .catch2 {
   justify-self: flex-end;
@@ -77,6 +76,8 @@
   display: flex;
   column-gap: 10px;
   grid-area: 3/2/4/3;
+  justify-self: flex-end;
+  align-self: center;
 }
 .icon svg {
   justify-self: flex-end;
@@ -87,7 +88,6 @@
   padding: 0.1rem;
 }
 .herobtn {
-  justify-self: flex-start;
   align-self: flex-start;
   grid-area: L;
   font-size: 19px;

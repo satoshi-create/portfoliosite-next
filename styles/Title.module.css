@@ -1,0 +1,16 @@
+.titlebox {
+  margin-bottom: 60px;
+}
+.title {
+  text-align: center;
+  font-family: var(--title-font);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.line {
+  margin: 0 auto;
+  width: 70px;
+  height: 6px;
+  background-color: var(--primary-green-02);
+}

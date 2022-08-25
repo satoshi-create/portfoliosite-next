@@ -1,23 +1,19 @@
 import React from "react";
 import styles from "../styles/About.module.css";
+import Title from "./Title";
 
 const About = () => {
   return (
-    <section className={`parts-grid ${styles.about}`}>
-      <div className={styles.aboutcenter}>
-        <div className={styles.title}>
-          <h3>自己紹介</h3>
-          <div className={styles.line}></div>
-        </div>
+    <section className={`parts-grid section-margin ${styles.about}`}>
+      <div className="section-padding">
+        <Title title={"自己紹介"} />
         <div className={styles.tabcontainer}>
           <div>
             <div className={styles.tabcenter}>
               <button className={`btn ${styles.tabbtn} ${styles.activebtn}`}>
                 来歴
               </button>
-              <button className={`btn ${styles.tabbtn}`}>
-                スキル
-              </button>
+              <button className={`btn ${styles.tabbtn}`}>スキル</button>
             </div>
             <article className={styles.article}>
               <p>

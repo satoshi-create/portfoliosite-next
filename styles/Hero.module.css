@@ -1,27 +1,47 @@
-.hero {
+/* .hero {
   background-image: url("../public/hero.png");
   height: 80vh;
   background-size: cover;
   background-position: center;
   grid-column: 2/-1;
-}
+} */
+/* @media screen and (min-width: 768px) {
+  .hero {
+    width: 70vw;
+    background-position: right;
+    justify-self: right;
+  }
+} */
+
 .box {
-  width: 100%;
-  height: 100%;
-  backdrop-filter: contrast(0.8);
   display: grid;
   grid-template-areas:
     "A B C"
     "D E F"
     "G H J"
     "K L M";
-  grid-template-rows: 50px repeat(3, auto);
-  grid-template-columns: 30px repeat(2, auto);
+  grid-template-rows: 50px repeat(3, 1fr);
+  grid-template-columns: 30px repeat(2, 1fr);
 }
+.heroFigure {
+  margin-left: 5vw;
+  margin-right: -5vw;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  z-index: 0;
+}
+
+.heroImg {
+  object-position: 40px;
+  filter: opacity(0.6);
+  height: 80vh;
+}
+
 .title {
+  z-index: 10;
   grid-area: E;
-  width: 165px;
-  height: 165px;
+  width: clamp(10.3125rem, 8.3263rem + 8.4746vw, 13.75rem);
+  height: clamp(10.3125rem, 8.3263rem + 8.4746vw, 13.75rem);
   background-color: var(--primary-green-02);
   display: grid;
   grid-template-columns: auto auto;
@@ -29,26 +49,9 @@
   position: relative;
 }
 .title h1 {
-  font-size: 55px;
+  font-size: clamp(3.4375rem, 2.7875rem + 2.7735vw, 4.5625rem);
   font-family: var(--title-font);
   font-weight: bold;
-}
-.catch {
-  font-size: 55px;
-  font-family: var(--title-font);
-  color: var(--grey);
-  filter: opacity(0.5);
-  /* filter: opacity(0.5); */
-}
-.catch1 {
-  justify-self: baseline;
-  grid-column: 3/-1;
-  grid-row: 2/4;
-  writing-mode: vertical-lr;
-}
-.catch2 {
-  justify-self: flex-end;
-  grid-area: 3/2/4/3;
 }
 .engawaline {
   position: absolute;
@@ -56,14 +59,35 @@
   right: -20px;
 }
 .line {
-  width: 78px;
-  height: 10px;
+  width: clamp(4.875rem, 3.9361rem + 4.0062vw, 6.5rem);
+  height: clamp(0.625rem, 0.4444rem + 0.7704vw, 0.9375rem);
   background-color: var(--primary-green-02);
 }
 .tate {
   transform: rotateY(90);
   transform: translate(39px, -44px) rotate(90deg);
 }
+.catch {
+  z-index: 10;
+  font-size: clamp(2.625rem, 1.7944rem + 3.5439vw, 4.0625rem);
+  font-family: var(--title-font);
+  color: var(--grey);
+  filter: opacity(0.9);
+  mix-blend-mode: multiply;
+}
+.catch1 {
+  justify-self: baseline;
+  align-self: center;
+  grid-column: 3/-1;
+  grid-row: 2/4;
+  writing-mode: vertical-lr;
+}
+.catch2 {
+  align-self: center;
+  justify-self: flex-end;
+  grid-area: 3/2/4/3;
+}
+
 .catch h2 {
   font-family: var(--en-font);
   font-size: 42px;
@@ -73,28 +97,77 @@
   transform: rotateZ(90deg);
 }
 .links {
+  z-index: 10;
   display: flex;
   column-gap: 10px;
   grid-area: 3/2/4/3;
   justify-self: flex-end;
-  align-self: center;
+  align-self: flex-end;
 }
 .icon svg {
+  width: clamp(1.25rem, 0.7083rem + 2.3112vw, 2.1875rem);
+  height: clamp(1.25rem, 0.7083rem + 2.3112vw, 2.1875rem);
   justify-self: flex-end;
   align-self: center;
-  background-color: var(--primary-green-02);
+  background-color: var(--primary-green-01);
   color: var(--white);
   border-radius: 0.2rem;
   padding: 0.1rem;
 }
 .herobtn {
+  z-index: 10;
   align-self: flex-start;
   grid-area: L;
-  font-size: 19px;
+  font-size: clamp(0.9375rem, 0.5764rem + 1.5408vw, 1.5625rem);
   color: var(--white);
   background-color: var(--accent-clr);
-  padding: 7px 21px;
+  padding: clamp(0.4375rem, 0.3292rem + 0.4622vw, 0.625rem)
+    clamp(1.25rem, 0.8889rem + 1.5408vw, 1.875rem);
   border-radius: 24px;
-  width: 160px;
+  width: clamp(8.125rem, 5.9582rem + 9.245vw, 11.875rem);
   font-weight: 600;
+}
+@media screen and (min-width: 1024px) {
+  .box {
+    display: grid;
+    grid-template-areas: none;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+  }
+  .heroFigure {
+    grid-column: 4/-1;
+    grid-row: 1/5;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .title {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .catch1 {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+  .catch2 {
+    grid-column: 1 / span 3;
+    justify-self: flex-end;
+    grid-row: 2;
+    align-self: center;
+  }
+  .links {
+    grid-column: 2 / span 3;
+    justify-self: flex-end;
+    align-self: flex-start;
+  }
+  .herobtn {
+    grid-column: 5 / span2;
+    grid-row: 4 / span 1;
+    align-self: flex-start;
+  }
+  .yoko {
+    transform: translate(5px, 16px);
+  }
+  .tate {
+    transform: translate(50px, -44px) rotate(90deg);
+  }
 }

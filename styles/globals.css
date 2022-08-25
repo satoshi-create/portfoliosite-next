@@ -6,18 +6,49 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* font-size: 10px; */
+  --transition: all 0.3s linear;
+  --overlay: rgba(0, 0, 0, 0.72);
+  --white: #ffffff;
+  --black: #141414;
+  --grey: #d8d8d8;
+  --accent-clr: #ff9692;
+  --primary-green-01: #7fbe92;
+  --primary-green-02: #b9ebc8;
+  --primary-green-03: #e5ffed;
+  --primary-green-04: #f1fff5;
+  --primary-green-05: #fff6f2;
+  --en-font: "Montserrat", sans-serif;
+  --title-font: "Noto Sans JP", sans-serif;
+  --text-font: Arial, Helvetica, sans-serif;
+}
+body {
+  font-family: var(--text-font);
+  font-size: 1.6rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
+ul {
+  list-style: none;
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+button {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.parts-grid {
+  display: grid;
+  grid-template-columns: 1fr min(calc(100vw - (5vw * 2)), 1200px) 1fr;
+}
+
+.parts-grid > * {
+  grid-column: 2;
 }

@@ -1,0 +1,23 @@
+.header {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: .5rem;
+}
+.headerCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerCenter a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 6px;
+  font-family: var(--en-font);
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.headerCenter img {
+  width: 30px;
+  height: 30px;
+}
+

@@ -11,7 +11,6 @@ const About = ({ title }) => {
   const [value, setValue] = useState(0);
 
   const { desc } = about[value];
-  console.log(desc);
   return (
     <section className={`parts-grid section-margin ${styles.about}`}>
       <div className="section-padding">

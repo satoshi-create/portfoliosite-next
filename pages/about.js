@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Head from "../components/Meta"
 
 const about = () => {
   return (
-    <div>制作中です</div>
-  )
-}
+    <>
+      <Head pagetitle={"アバウト"} pageDesc={"アバウトページです"} />
+      <div>制作中です</div>
+    </>
+  );
+};
 
-export default about
+export default about;

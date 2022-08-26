@@ -3,10 +3,12 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Card from "../components/Card";
 import {projects,demos} from "../libs/sites"
+import Head from "../components/Meta";
 
 const index = () => {
   return (
     <>
+      <Head/>
       <Hero />
       <About title={{ title1: "自己紹介" }} />
       <Card

@@ -6,11 +6,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Card = ({ value }) => {
-  const { sites, title } = value;
+  const { sites, title1, title2 } = value;
   return (
     <section className={`parts-grid section-margin ${styles.project}`}>
       <div className="section-padding">
-        <Title title={title} />
+        <Title title={{ title1, title2 }} />
       </div>
       <ul className={styles.cards}>
         {sites.map((item, index) => {
@@ -28,7 +28,6 @@ const Card = ({ value }) => {
                     alt={title}
                     priority
                   />
- 
                 </a>
               </Link>
               <div className={styles.info}>

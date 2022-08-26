@@ -7,7 +7,9 @@
   font-weight: bold;
   font-size: clamp(1.875rem, 1.5139rem + 1.5408vw, 2.5rem);
 }
-
+.green{
+  color: var(--primary-green-01);
+}
 .line {
   margin: 0 auto;
   width: 70px;

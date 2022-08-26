@@ -55,9 +55,11 @@ const index = () => {
   return (
     <>
       <Hero />
-      <About />
-      <Card value={{ sites: project, title: "プロジェクトサイト" }} />
-      <Card value={{ sites: demo, title: "デモサイト" }} />
+      <About title={{ title1: "自己紹介"}} />
+      <Card
+        value={{ sites: project, title1: "プロジェクト", title2: "サイト" }}
+      />
+      <Card value={{ sites: demo, title1: "デモ", title2: "サイト" }} />
     </>
   );
 };

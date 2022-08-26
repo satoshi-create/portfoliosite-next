@@ -5,7 +5,8 @@ import Button from "./Button";
 import Image from "next/image";
 import about from "../libs/about";
 
-const About = () => {
+const About = ({ title }) => {
+  const { title1 } = title;
   const [tab, seTab] = useState([]);
   const [value, setValue] = useState(0);
 
@@ -14,7 +15,7 @@ const About = () => {
   return (
     <section className={`parts-grid section-margin ${styles.about}`}>
       <div className="section-padding">
-        <Title title={"自己紹介"} />
+        <Title title={{ title1 }} />
         <div className={styles.tabcenter}>
           <div>
             {/* about container */}

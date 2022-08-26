@@ -32,12 +32,13 @@
   background-color: var(--white);
   color: var(--black);
   border-radius: 0.2rem;
-  padding: 0.1rem;
+  padding: 0.3rem;
   transition: var(--transition);
 }
 .aboutLinks svg:hover {
   background-color: var(--black);
   color: var(--white);
+  border: 1px solid var(--white);
 }
 
 .copyright {

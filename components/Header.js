@@ -2,8 +2,7 @@ import React from "react";
 import styles from "../styles/Header.module.css";
 import { Menu } from "react-feather";
 import Link from "next/link";
-import links from "../libs/links";
-
+import { links } from "../libs/links";
 
 const Header = () => {
   return (

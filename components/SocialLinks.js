@@ -1,5 +1,5 @@
 import React from "react";
-import socialLinks from "../libs//socialLinks";
+import { socialLinks } from "../libs//socialLinks";
 import Link from "next/link";
 import styles from "../styles/SocialLinks.module.css";
 

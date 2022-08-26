@@ -1,6 +1,6 @@
 import { GitHub, Twitter, Youtube } from "react-feather";
 
-export default [
+export const socialLinks = [
   {
     name: "github",
     icon: <GitHub />,

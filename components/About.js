@@ -3,7 +3,7 @@ import styles from "../styles/About.module.css";
 import Title from "./Title";
 import Button from "./Button";
 import Image from "next/image";
-import about from "../libs/about";
+import { about } from "../libs/about";
 
 const About = ({ title }) => {
   const { title1 } = title;

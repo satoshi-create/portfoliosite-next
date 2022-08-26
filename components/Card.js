@@ -21,8 +21,8 @@ const Card = ({ value }) => {
                 <a target="_blank">
                   <Image
                     src={src}
-                    width={280}
-                    height={193}
+                    width={1200}
+                    height={602}
                     layout="responsive"
                     className={styles.cardImg}
                     alt={title}

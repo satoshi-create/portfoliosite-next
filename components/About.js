@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/About.module.css";
 import Title from "./Title";
 import Button from "./Button";
-import Link from "next/link";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -30,8 +30,11 @@ const About = () => {
               />
             </article>
           </div>
-          <figure className={styles.figure}>
-            <img src="/about.png" alt="about" />
+          <figure
+            style={{ position: "relative", width: "100%", height: "50vh" }}
+            className={styles.figure}
+          >
+            <Image src="/about.png" layout="fill" objectFit="cover" />
           </figure>
         </div>
       </div>

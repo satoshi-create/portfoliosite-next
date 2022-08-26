@@ -3,6 +3,7 @@ import styles from "../styles/Card.module.css";
 import Title from "./Title";
 import { GitHub } from "react-feather";
 import Link from "next/link";
+import Image from "next/image";
 
 const Card = ({ value }) => {
   const { sites, title } = value;
@@ -18,9 +19,16 @@ const Card = ({ value }) => {
             <li className={styles.card} key={index}>
               <Link href={url}>
                 <a target="_blank">
-                  <figure>
-                    <img src={src} alt={title} className={styles.cardImg} />
-                  </figure>
+                  <Image
+                    src={src}
+                    width={280}
+                    height={193}
+                    layout="responsive"
+                    className={styles.cardImg}
+                    alt={title}
+                    priority
+                  />
+ 
                 </a>
               </Link>
               <div className={styles.info}>

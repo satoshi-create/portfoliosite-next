@@ -1,17 +1,3 @@
-/* .hero {
-  background-image: url("../public/hero.png");
-  height: 80vh;
-  background-size: cover;
-  background-position: center;
-  grid-column: 2/-1;
-} */
-/* @media screen and (min-width: 768px) {
-  .hero {
-    width: 70vw;
-    background-position: right;
-    justify-self: right;
-  }
-} */
 
 .box {
   display: grid;
@@ -30,11 +16,9 @@
   grid-column: 1/-1;
   z-index: 0;
 }
-
 .heroImg {
   object-position: 40px;
   filter: opacity(0.6);
-  height: 80vh;
 }
 
 .title {

@@ -2,14 +2,24 @@ import React from "react";
 import styles from "../styles/Hero.module.css";
 import Button from "./Button";
 import SocialLinks from "./SocialLinks";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <section className="parts-grid">
       <div className={styles.box}>
-        <figure className={styles.heroFigure}>
-          <img src="/hero.png" className={styles.heroImg} />
+        <figure
+          style={{ position: "relative", width: "100%", height: "80vh" }}
+          className={styles.heroFigure}
+        >
+          <Image
+            src="/hero.png"
+            layout="fill"
+            objectFit="cover"
+            className={styles.heroImg}
+          />
         </figure>
+
         <div className={styles.title}>
           <h1>縁</h1>
           <h1>側</h1>

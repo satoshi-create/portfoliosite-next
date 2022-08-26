@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Header.module.css";
 import { Menu } from "react-feather";
 import Link from "next/link";
-import { links } from "../libs/links";
+import Links from "./Links";
 
 const Header = () => {
   return (
@@ -20,17 +20,11 @@ const Header = () => {
               <Menu />
             </button>
           </div>
-          <ul className={styles.navPc}>
-            {links.map((link, index) => {
-              return (
-                <li key={index}>
-                  <Link href={link.path}>
-                    <a className={styles.navPcLink}>{link.name}</a>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+          <Links
+            value={{
+              style: styles.headerNavPc,
+            }}
+          />
         </nav>
       </div>
     </header>

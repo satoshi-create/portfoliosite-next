@@ -7,7 +7,7 @@ import { about } from "../libs/about";
 
 const About = ({ title }) => {
   const { title1 } = title;
-  const [tab, seTab] = useState([]);
+  // const [tab, seTab] = useState([]);
   const [value, setValue] = useState(0);
 
   const { desc } = about[value];
@@ -48,10 +48,15 @@ const About = ({ title }) => {
               />
             </article>
           </div>
-          <figure
-            className={styles.figure}
-          >
-            <Image src="/about.png" layout="fill" objectFit="cover" />
+          <figure className={styles.figure}>
+            <Image
+              src="/about.png"
+              layout="fill"
+              objectFit="cover"
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmF/vAwADMQFs4YXxygAAAABJRU5ErkJggg=="
+              alt="about-image"
+            />
           </figure>
         </div>
       </div>

@@ -1,16 +1,22 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
 import SocialLinks from "./SocialLinks";
+import Links from "./Links"
 
 const Footer = () => {
   return (
     <footer className={`parts-grid ${styles.footer}`}>
       <div className={styles.center}>
         <div className={styles.title}>
-          <img src="/logo-footer.png" alt="logo" className={styles.logo} />
+          <img
+            src="/logo-footer.png"
+            alt="logo"
+            className={styles.logo}
+          />
           <h4>engawakobo</h4>
         </div>
         <SocialLinks value={{ styleUl: styles.aboutLinks }} />
+        <Links value={{style:styles.footerNavPc}}/>
       </div>
       <p className={styles.copyright}>@2022 ENGAWAKOBO All rights reserverd</p>
     </footer>

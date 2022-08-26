@@ -17,6 +17,10 @@ const Hero = () => {
             layout="fill"
             objectFit="cover"
             className={styles.heroImg}
+            alt="hero-image"
+            priority
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmF/vAwADMQFs4YXxygAAAABJRU5ErkJggg=="
           />
         </figure>
 

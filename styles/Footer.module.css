@@ -7,12 +7,15 @@
 }
 .center {
   grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 .title {
   display: flex;
   column-gap: 6px;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: center;
 }
 .logo {
   width: clamp(1.875rem, 1.6583rem + 0.9245vw, 2.25rem);
@@ -27,6 +30,7 @@
 .aboutLinks {
   composes: links from "./SocialLinks.module.css";
   justify-content: center;
+font-size: clamp(0.875rem, 0.6583rem + 0.9245vw, 1.25rem);
 }
 .aboutLinks svg {
   background-color: var(--white);
@@ -40,7 +44,10 @@
   color: var(--white);
   border: 1px solid var(--white);
 }
-
+.footerNavPc {
+  composes: navPc from "./Links.module.css";
+  color: var(--white);
+}
 .copyright {
   grid-row: 1;
   justify-self: center;

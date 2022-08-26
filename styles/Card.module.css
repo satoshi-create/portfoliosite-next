@@ -42,3 +42,18 @@
 .icon {
   color: var(--primary-green-01);
 }
+@media screen and (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    flex: 0 0 calc(33% - 2rem);
+  }
+}

@@ -14,12 +14,12 @@
   align-items: center;
   margin-bottom: 20px;
 }
-.title img {
-  width: 30px;
-  height: 30px;
+.logo {
+  width: clamp(1.875rem, 1.6583rem + 0.9245vw, 2.25rem);
+  height: clamp(1.875rem, 1.6583rem + 0.9245vw, 2.25rem);
 }
 .title h4 {
-  font-size: 17px;
+  font-size: clamp(1.0625rem, 0.9542rem + 0.4622vw, 1.25rem);
   font-family: var(--en-font);
   color: var(--white);
   text-transform: uppercase;
@@ -40,7 +40,7 @@
   grid-row: 1;
   justify-self: center;
   align-self: flex-end;
-  font-size: 9px;
+  font-size: clamp(0.5625rem, 0.3819rem + 0.7704vw, 0.875rem);
   color: var(--white);
   margin-bottom: 20px;
 }

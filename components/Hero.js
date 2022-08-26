@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/Hero.module.css";
 import socialLinks from "../libs/socialLinks";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -33,7 +34,7 @@ const Hero = () => {
             );
           })}
         </ul>
-        <button className={`btn ${styles.herobtn}`}>作品を見る</button>
+        <Button value={{style:styles.herobtn,title:"作品を見る"}} />
       </div>
     </section>
   );

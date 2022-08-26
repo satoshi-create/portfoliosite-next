@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/About.module.css";
 import Title from "./Title";
+import Button from "./Button";
 
 const About = () => {
   return (
@@ -19,6 +20,7 @@ const About = () => {
               <p>
                 東京を中心とした都市部で、ドローン宅配の実証実験をおこなっています。東京を中心とした都市部で、ドローン宅配の実証実験をおこなっています。東京を中心とした都市部で、ドローン宅配の実証実験をおこなっています。
               </p>
+              <Button value={{ style: styles.aboutbtn, title: "MORE" }} />
             </article>
           </div>
           <figure className={styles.figure}>

@@ -17,7 +17,7 @@ const About = ({ title }) => {
       <div className="section-padding">
         <Title title={{ title1 }} />
         <div className={styles.tabcenter}>
-          <div>
+          <div className={styles.tabBox}>
             {/* about container */}
             <div className={styles.tabcontainer}>
               {about.map((item, index) => {
@@ -38,7 +38,7 @@ const About = ({ title }) => {
             </div>
             {/* about info */}
             <article className={styles.article}>
-              <p>{desc}</p>
+              <p className={styles.desc}>{desc}</p>
               <Button
                 value={{
                   style: styles.aboutbtn,
@@ -49,7 +49,6 @@ const About = ({ title }) => {
             </article>
           </div>
           <figure
-            style={{ position: "relative", width: "100%", height: "50vh" }}
             className={styles.figure}
           >
             <Image src="/about.png" layout="fill" objectFit="cover" />

@@ -6,14 +6,16 @@
   display: flex;
   row-gap: 40px;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
+
 .tabcontainer {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
   column-gap: 90px;
 }
+
 .tabbtn {
   font-size: 25px;
   font-family: var(--title-font);
@@ -30,9 +32,18 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  /* height: 60vh; */
 }
-.article p {
+.desc {
   font-size: 20px;
+}
+.figure {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+.figure img {
+  filter: opacity(0.6);
 }
 .aboutbtn {
   align-self: flex-end;
@@ -45,14 +56,19 @@
   font-family: var(--en-font);
   font-weight: bold;
 }
-.figure img {
-  filter: opacity(0.6);
-}
+
 @media screen and (min-width: 1024px) {
   .tabcenter {
     row-gap: 0;
     align-items: flex-start;
-    column-gap: 32px;
     flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .tabBox {
+    flex: 0 0 calc(66% - 1rem);
+  }
+  .figure {
+    flex: 0 0 calc(34% - 1rem);
+    height: 60vh;
   }
 }

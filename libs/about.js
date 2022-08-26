@@ -1,10 +1,10 @@
 export default [
   {
     title: "経歴",
-    desc: "東京を中心とした都市部で、ドローン宅配の実証実験をおこなっています。東京を中心とした都市部で、ドローン宅配の実証実験をおこなっています。東京を中心とした都市部で、ドローン宅配の実証実験をおこなっています。",
+    desc: "職業訓練校にて、グラフィックデザインとウェブデザインを学びました。その後も主にコーディングを中心としてウェブデザインの自己学習を続け、最新技術の習得に努めています。現在、特に関心を持って学習を続けている分野は、REACTやGatsby、Next.js、XD,Affinity Designer、Affinity Photoです。",
   },
   {
     title: "スキル",
-    desc: "I'm baby salvia lomo yuccie, vinyl seitan XOXO tousled bicycle rights slow-carb occupy taiyaki microdosing brunch. Photo booth slow-carb health goth kickstarter cardigan. Roof party pour-over swag pork belly glossier DIY farm-to-table godard locavore. Chicharrones gastropub slow-carb food truck tumblr semiotics, heirloom ugh wolf unicorn thundercats health goth.",
+    desc: "職業訓練校ではIllustrator、Photoshop、HTML、CSSを中心に学びました。その後、HTML5、CSSグリッドなどのモダンコーディングスキル、Gatsby、Next.jsなどのフレームワーク、Adobe製品の代替ツールであるAffinity Designer、Affinity Photoを学んでいます。",
   },
 ];

@@ -35,10 +35,15 @@
   font-size: 20px;
 }
 .aboutbtn {
+  align-self: flex-end;
+}
+
+.aboutbtn {
   composes: aboutbtn from "./Button.module.css";
+}
+.aboutbtn > button {
   font-family: var(--en-font);
   font-weight: bold;
-  align-self: flex-end;
 }
 .figure img {
   width: 290px;

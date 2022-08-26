@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/Hero.module.css";
-import socialLinks from "../libs/socialLinks";
 import Button from "./Button";
+import SocialLinks from "./SocialLinks";
 
 const Hero = () => {
   return (
@@ -22,19 +22,14 @@ const Hero = () => {
         </div>
         <h2 className={`${styles.catch} ${styles.catch1}`}>MARGINAL</h2>
         <h2 className={`${styles.catch} ${styles.catch2}`}>DESIGN</h2>
-        <ul className={styles.links}>
-          {socialLinks.map((item, index) => {
-            const { name, icon, path } = item;
-            return (
-              <li key={index}>
-                <socialLinks href={path}>
-                  <a className={styles.icon}>{icon}</a>
-                </socialLinks>
-              </li>
-            );
-          })}
-        </ul>
-        <Button value={{style:styles.herobtn,title:"作品を見る"}} />
+        <SocialLinks value={{ styleUl: styles.heroLinks }} />
+        <Button
+          value={{
+            style: styles.herobtn,
+            title: "作品を見る",
+            path: "/contents",
+          }}
+        />
       </div>
     </section>
   );

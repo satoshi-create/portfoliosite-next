@@ -25,7 +25,7 @@ const Header = () => {
               return (
                 <li key={index}>
                   <Link href={link.path}>
-                    <a>{link.name}</a>
+                    <a className={styles.navPcLink}>{link.name}</a>
                   </Link>
                 </li>
               );

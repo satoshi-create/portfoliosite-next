@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
-import socialLinks from "../libs/socialLinks";
 import SocialLinks from "./SocialLinks";
-import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -12,18 +10,7 @@ const Footer = () => {
           <img src="/logo-footer.png" alt="logo" className={styles.logo} />
           <h4>engawakobo</h4>
         </div>
-        <ul className={styles.links}>
-          {socialLinks.map((item, index) => {
-            const { name, icon, path } = item;
-            return (
-              <li key={index}>
-                <socialLinks href={path}>
-                  <a className={styles.icon}>{icon}</a>
-                </socialLinks>
-              </li>
-            );
-          })}
-        </ul>
+        <SocialLinks value={{ styleUl: styles.aboutLinks }} />
       </div>
       <p className={styles.copyright}>@2022 ENGAWAKOBO All rights reserverd</p>
     </footer>

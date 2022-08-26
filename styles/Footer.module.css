@@ -24,16 +24,20 @@
   color: var(--white);
   text-transform: uppercase;
 }
-.links {
-  display: flex;
+.aboutLinks {
+  composes: links from "./SocialLinks.module.css";
   justify-content: center;
-  column-gap: 10px;
 }
-.icon svg {
+.aboutLinks svg {
   background-color: var(--white);
   color: var(--black);
   border-radius: 0.2rem;
   padding: 0.1rem;
+  transition: var(--transition);
+}
+.aboutLinks svg:hover {
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .copyright {

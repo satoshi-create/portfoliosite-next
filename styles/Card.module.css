@@ -41,6 +41,13 @@
 }
 .icon {
   color: var(--primary-green-01);
+  transition: var(--transition);
+  border-radius: 0.2rem;
+  padding: 0.1rem;
+}
+.icon:hover {
+  background-color: var(--primary-green-01);
+  color: var(--white);
 }
 @media screen and (min-width: 768px) {
   .cards {

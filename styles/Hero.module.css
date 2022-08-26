@@ -39,7 +39,7 @@
 
 .title {
   z-index: 10;
-  grid-area: E;
+  grid-area: D;
   width: clamp(10.3125rem, 8.3263rem + 8.4746vw, 13.75rem);
   height: clamp(10.3125rem, 8.3263rem + 8.4746vw, 13.75rem);
   background-color: var(--primary-green-02);
@@ -96,32 +96,37 @@
 .catch h2:first-child {
   transform: rotateZ(90deg);
 }
-.links {
+
+.herobtn {
+  composes: herobtn from "./Button.module.css";
   z-index: 10;
-  display: flex;
-  column-gap: 10px;
+  align-self: center;
+  grid-area: L;
+}
+.herobtn > button {
+  font-family: var(--title-font);
+  font-weight: 600;
+}
+.heroLinks {
+  composes: links from "./SocialLinks.module.css";
   grid-area: 3/2/4/3;
   justify-self: flex-end;
   align-self: flex-end;
+  z-index: 10;
 }
-.icon svg {
+.heroLinks svg {
   width: clamp(1.25rem, 0.7083rem + 2.3112vw, 2.1875rem);
   height: clamp(1.25rem, 0.7083rem + 2.3112vw, 2.1875rem);
-  justify-self: flex-end;
-  align-self: center;
   background-color: var(--primary-green-01);
   color: var(--white);
   border-radius: 0.2rem;
   padding: 0.1rem;
+  transition: var(--transition);
 }
-.herobtn {
-  composes: herobtn from "./Button.module.css";
-  z-index: 10;
-  align-self: flex-start;
-  grid-area: L;
-  font-weight: 600;
+.heroLinks svg:hover {
+  background-color: var(--white);
+  color: var(--primary-green-01);
 }
-
 @media screen and (min-width: 1024px) {
   .box {
     display: grid;
@@ -154,6 +159,7 @@
     justify-self: flex-end;
     align-self: flex-start;
   }
+
   .herobtn {
     grid-column: 5 / span2;
     grid-row: 4 / span 1;

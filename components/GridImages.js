@@ -12,7 +12,7 @@ const GridImages = ({ title }) => {
         <Title title={{ title1 }} />
         <div className={styles.gridconteinter}>
           {gridImages.map((item, index) => {
-            const { path, name,nameen } = item;
+            const { path, name, nameen, AD } = item;
             return (
               <figure className={styles.figure} key={index}>
                 <Image
@@ -25,7 +25,14 @@ const GridImages = ({ title }) => {
                   placeholder="blur"
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmF/vAwADMQFs4YXxygAAAABJRU5ErkJggg=="
                 />
-                <div className={styles.info}>{name}</div>
+                <div className={styles.info}>
+                  <p className={styles.name}>{name}</p>
+                  <img
+                    src="/affinity_designer_icon.png"
+                    alt={nameen}
+                    className={styles.tool}
+                  />
+                </div>
               </figure>
             );
           })}

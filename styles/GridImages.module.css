@@ -25,17 +25,24 @@
   opacity: 0;
 }
 .info {
-  font-family: var(--sub-font);
-  text-align: center;
-  color: var(--white);
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -webkit-transition: var(--transition);
   transition: var(--transition);
   opacity: 0;
+  display: grid;
+  place-items: center;
+  row-gap: 1rem;
+}
+.name {
+  font-family: var(--sub-font);
+  color: var(--white);
+}
+.tool {
+  width: 32px;
+  height: 32px;
 }
 .image {
   width: 100%;

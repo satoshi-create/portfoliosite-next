@@ -67,6 +67,7 @@
   writing-mode: vertical-lr;
 }
 .catch2 {
+  transform: rotateZ(180deg);
   align-self: center;
   justify-self: flex-end;
   grid-area: 3/2/4/3;

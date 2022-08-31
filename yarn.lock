@@ -1007,16 +1007,6 @@
   "resolved" "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz"
   "version" "2.0.0"
 
-"jquery-browserify@^1.8.1":
-  "integrity" "sha512-IDMCKuU5padhYWP21juFL10BOySPnlihoX7R1dHKeCcwl/JdeO3trDbimKQdPXtQsWIdYMwkAyxQ3+ksEj1iMQ=="
-  "resolved" "https://registry.npmjs.org/jquery-browserify/-/jquery-browserify-1.8.1.tgz"
-  "version" "1.8.1"
-
-"jquery-mousewheel@^3.1.13":
-  "integrity" "sha512-GXhSjfOPyDemM005YCEHvzrEALhKDIswtxSHSR2e4K/suHVJKJxxRCGz3skPjNxjJjQa9AVSGGlYjv1M3VLIPg=="
-  "resolved" "https://registry.npmjs.org/jquery-mousewheel/-/jquery-mousewheel-3.1.13.tgz"
-  "version" "3.1.13"
-
 "jquery@^3.6.0":
   "integrity" "sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw=="
   "resolved" "https://registry.npmjs.org/jquery/-/jquery-3.6.0.tgz"
@@ -1070,11 +1060,6 @@
   "version" "1.0.5"
   dependencies:
     "language-subtag-registry" "~0.3.2"
-
-"lazysizes@^5.3.2":
-  "integrity" "sha512-22UzWP+Vedi/sMeOr8O7FWimRVtiNJV2HCa+V8+peZOw6QbswN9k58VUhd7i6iK5bw5QkYrF01LJbeJe0PV8jg=="
-  "resolved" "https://registry.npmjs.org/lazysizes/-/lazysizes-5.3.2.tgz"
-  "version" "5.3.2"
 
 "levn@^0.4.1":
   "integrity" "sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ=="

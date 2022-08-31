@@ -1,0 +1,75 @@
+.gridImages {
+  background-color: var(--primary-green-03);
+}
+.gridImagesCenter {
+  display: grid;
+  gap: 2rem;
+}
+.figure {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  cursor: pointer;
+  background: var(--primary-green-01);
+  border-radius: 20px;
+}
+.figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0.25rem solid var(--white);
+  transition: var(--transition);
+  opacity: 0;
+}
+.image {
+  width: 100%;
+  transition: var(--transition);
+  border-radius: 20px;
+}
+.figure:hover .image {
+  opacity: 0.1;
+}
+.figure:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+/* .image {
+  transition: var(--transition);
+}
+.figure:hover .image {
+  transform: scale(1.3);
+} */
+@media screen and (min-width: 768px) {
+  .gridImagesCenter {
+    grid-template-areas:
+      "A B B"
+      "A C E"
+      "D D E";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .figure:nth-child(1) {
+    grid-area: A;
+    height: 100%;
+  }
+  .figure:nth-child(2) {
+    grid-area: B;
+  }
+  .figure:nth-child(3) {
+    grid-area: C;
+  }
+  .figure:nth-child(4) {
+    grid-area: D;
+  }
+  figure:nth-child(4) .image {
+    object-position: 50% 30%;
+  }
+  .figure:nth-child(5) {
+    grid-area: E;
+    height: 100%;
+  }
+}

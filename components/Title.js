@@ -6,7 +6,7 @@ const Title = ({ title }) => {
   return (
     <div className={styles.titlebox}>
       <h3 className={styles.title}>
-        <span className={styles.green}>{title1}</span>
+        <span className={title2 && styles.green}>{title1}</span>
         {title2 && title2}
       </h3>
       <div className={styles.line}></div>

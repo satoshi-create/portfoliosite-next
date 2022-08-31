@@ -1,7 +1,7 @@
 export const about = [
   {
     title: "経歴",
-    desc: "職業訓練校にて、グラフィックデザインとウェブデザインを学びました。その後も主にコーディングを中心としてウェブデザインの自己学習を続け、最新技術の習得に努めています。現在、特に関心を持って学習を続けている分野は、REACTやGatsby、Next.js、XD,Affinity Designer、Affinity Photoです。",
+    desc: "職業訓練校にて、グラフィックデザインとウェブデザインを学びました。その後も主にコーディングを中心としてウェブデザインの自己学習を続け、最新技術の習得に努めています。現在、特に関心を持って学習を続けている分野は、ReactやGatsby、Next.js、Adbe XD、Affinity Designer、Affinity Photoです。",
   },
   {
     title: "スキル",

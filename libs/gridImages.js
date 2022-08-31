@@ -1,22 +1,28 @@
 export const gridImages = [
   {
     path: "/gridImage_01.png",
-    name: "illust-ukiyoe",
+    name: "夜の梅",
+    nameen: "illust-ukiyoe",
   },
   {
     path: "/gridImage_02.png",
-    name: "list",
+    name: "ミチオシエ",
+    nameen: "list",
+    tool: "affinity designer",
   },
   {
     path: "/gridImage_03.png",
-    name: "illust-tsuboe",
+    name: "アマゾネス",
+    nameen: "illust-tsuboe",
   },
   {
     path: "/gridImage_04.png",
-    name: "magazine",
+    name: "雲龍",
+    nameen: "magazine",
   },
   {
     path: "/gridImage_05.png",
-    name: "illust-umi",
+    name: "扇子を持つ女",
+    nameen: "illust-umi",
   },
 ];

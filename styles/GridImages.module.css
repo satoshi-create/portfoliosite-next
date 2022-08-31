@@ -1,7 +1,7 @@
 .gridImages {
   background-color: var(--primary-green-03);
 }
-.gridImagesCenter {
+.gridconteinter {
   display: grid;
   gap: 2rem;
 }
@@ -24,6 +24,19 @@
   transition: var(--transition);
   opacity: 0;
 }
+.info {
+  font-family: var(--sub-font);
+  text-align: center;
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  opacity: 0;
+}
 .image {
   width: 100%;
   transition: var(--transition);
@@ -32,19 +45,27 @@
 .figure:hover .image {
   opacity: 0.1;
 }
+.figure:hover .info {
+  opacity: 1;
+}
 .figure:hover::after {
   opacity: 1;
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
 }
-/* .image {
-  transition: var(--transition);
+.figure:nth-child(2) .image {
+  background-color: #6e0b0b;
 }
-.figure:hover .image {
-  transform: scale(1.3);
-} */
+.figure:nth-child(4) .image {
+  object-position: 50% 30%;
+  background-color: #4f2750;
+}
+.figure:nth-child(5) .image {
+  background-color: #9b1dab;
+}
+
 @media screen and (min-width: 768px) {
-  .gridImagesCenter {
+  .gridconteinter {
     grid-template-areas:
       "A B B"
       "A C E"
@@ -59,15 +80,14 @@
   .figure:nth-child(2) {
     grid-area: B;
   }
+
   .figure:nth-child(3) {
     grid-area: C;
   }
   .figure:nth-child(4) {
     grid-area: D;
   }
-  figure:nth-child(4) .image {
-    object-position: 50% 30%;
-  }
+
   .figure:nth-child(5) {
     grid-area: E;
     height: 100%;

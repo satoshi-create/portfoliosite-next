@@ -10,9 +10,9 @@ const GridImages = ({ title }) => {
     <section className={`parts-grid section-margin ${styles.gridImages}`}>
       <div className="section-padding">
         <Title title={{ title1 }} />
-        <div className={styles.gridImagesCenter}>
+        <div className={styles.gridconteinter}>
           {gridImages.map((item, index) => {
-            const { path, name } = item;
+            const { path, name,nameen } = item;
             return (
               <figure className={styles.figure} key={index}>
                 <Image
@@ -20,11 +20,12 @@ const GridImages = ({ title }) => {
                   layout="fill"
                   objectFit="cover"
                   className={styles.image}
-                  alt={name}
+                  alt={nameen}
                   priority
                   placeholder="blur"
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmF/vAwADMQFs4YXxygAAAABJRU5ErkJggg=="
                 />
+                <div className={styles.info}>{name}</div>
               </figure>
             );
           })}

@@ -3,7 +3,7 @@ export const projects = [
     title: "横スクロールで楽しむ絵巻物",
     src: "/thumb-emakimono.png",
     url: "https://emakimono.com/",
-    tag: ["html", "css", "javascript", "jquery"],
+    tag: ["html", "css", "react","next.js"],
     githubUrl: "https://github.com/satoshi-create/emakimono",
   },
   {

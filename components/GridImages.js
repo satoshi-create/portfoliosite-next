@@ -12,7 +12,7 @@ const GridImages = ({ title }) => {
         <Title title={{ title1 }} />
         <div className={styles.gridconteinter}>
           {gridImages.map((item, index) => {
-            const { path, name, nameen, AD } = item;
+            const { path, name, nameen, AD ,author} = item;
             return (
               <figure className={styles.figure} key={index}>
                 <Image

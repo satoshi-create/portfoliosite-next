@@ -22,16 +22,15 @@ const About = ({ title }) => {
               {about.map((item, index) => {
                 const { title } = item;
                 return (
-                  <>
-                    <button
-                      onClick={() => setValue(index)}
-                      className={`btn ${styles.tabbtn} ${
-                        value === index ? styles.activebtn : ""
-                      }`}
-                    >
-                      {title}
-                    </button>
-                  </>
+                  <button
+                    onClick={() => setValue(index)}
+                    className={`btn ${styles.tabbtn} ${
+                      value === index ? styles.activebtn : ""
+                    }`}
+                    key={index}
+                  >
+                    {title}
+                  </button>
                 );
               })}
             </div>
@@ -64,4 +63,3 @@ const About = ({ title }) => {
 };
 
 export default About;
-

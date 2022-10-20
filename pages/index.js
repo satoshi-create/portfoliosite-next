@@ -13,9 +13,9 @@ const index = () => {
       <Hero />
       <About title={{ title1: "自己紹介" }} />
       <Card value={{ sites: demos, title1: "デモ", title2: "サイト" }} />
-      <Card
+      {/* <Card
         value={{ sites: projects, title1: "プロジェクト", title2: "サイト" }}
-      />
+      /> */}
       <Grapics title={{ title1: "グラフィックデザイン" }} />
     </>
   );

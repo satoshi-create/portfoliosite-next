@@ -11,10 +11,15 @@ const contents = () => {
     <>
       <Head />
       <Card value={{ sites: demos, title1: "デモ", title2: "サイト" }} />
-      <Grapics title={{ title1: "グラフィックデザイン", bcgClr: false }} />
       <Card
-        value={{ sites: projects, title1: "プロジェクト", title2: "サイト" }}
+        value={{
+          sites: projects,
+          title1: "プロジェクト",
+          title2: "サイト",
+          bcgClr: true,
+        }}
       />
+      <Grapics title={{ title1: "グラフィックデザイン", bcgClr: false }} />
     </>
   );
 };

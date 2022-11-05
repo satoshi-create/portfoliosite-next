@@ -6,9 +6,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Card = ({ value }) => {
-  const { sites, title1, title2 } = value;
+  const { sites, title1, title2, bcgClr } = value;
+  console.log(bcgClr);
   return (
-    <section className={`parts-grid section-margin ${styles.project}`}>
+    <section className={`parts-grid section-margin ${bcgClr === true && styles.container}`}>
       <div className="section-padding">
         <Title title={{ title1, title2 }} />
       </div>

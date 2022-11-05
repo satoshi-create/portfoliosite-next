@@ -6,11 +6,10 @@ import { gridImages } from "../libs/gridImages";
 
 const GridImages = ({ title }) => {
   const { title1, bcgClr } = title;
-  console.log(bcgClr);
   return (
     <section
       className={`parts-grid section-margin ${
-        bcgClr === true ? styles.gridImages1 : styles.gridImages2
+        bcgClr === true && styles.gridImages1
       }`}
     >
       <div className="section-padding">

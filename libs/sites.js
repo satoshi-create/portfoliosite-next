@@ -1,18 +1,18 @@
 export const projects = [
-  // {
-  //   title: "横スクロールで楽しむ絵巻物",
-  //   src: "/thumb-emakimono.png",
-  //   url: "https://emakimono.com/",
-  //   tag: ["html", "css", "react","next.js"],
-  //   githubUrl: "https://github.com/satoshi-create/emakimono",
-  // },
   {
-    title: "流域図から眺めるハザードマップ",
-    src: "/thumb-ryuuikizu.png",
-    url: "https://river-map.vercel.app/ ",
-    tag: ["html", "css", "react", "next.js"],
-    githubUrl: "https://github.com/satoshi-create/river-map",
+    title: "横スクロールで楽しむ絵巻物",
+    src: "/thumb-emakimono.png",
+    url: "https://emakimono.com/",
+    tag: ["html", "css", "react","next.js"],
+    githubUrl: "https://github.com/satoshi-create/emakimono",
   },
+  // {
+  //   title: "流域図から眺めるハザードマップ",
+  //   src: "/thumb-ryuuikizu.png",
+  //   url: "https://river-map.vercel.app/ ",
+  //   tag: ["html", "css", "react", "next.js"],
+  //   githubUrl: "https://github.com/satoshi-create/river-map",
+  // },
   {
     title: "縦書きで読む古典文学",
     src: "/thumb-tategaki.png",

@@ -6,13 +6,15 @@ import Image from "next/image";
 import { about } from "../libs/about";
 
 const About = ({ title }) => {
-  const { title1 } = title;
-  // const [tab, seTab] = useState([]);
+  const { title1, bcgClr } = title;
+  console.log(bcgClr);
   const [value, setValue] = useState(0);
 
   const { desc } = about[value];
   return (
-    <section className={`parts-grid section-margin ${styles.about}`}>
+    <section
+      className={`parts-grid section-margin ${bcgClr === true && styles.about}`}
+    >
       <div className="section-padding">
         <Title title={{ title1 }} />
         <div className={styles.tabcenter}>

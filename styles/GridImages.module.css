@@ -1,5 +1,9 @@
-.gridImages {
+.gridImages1 {
   background-color: var(--primary-green-03);
+}
+.gridImages2 {
+  background-color: var(--primary-green-04);
+  /* background-color: var(--accent-clr-02); */
 }
 .gridconteinter {
   display: grid;

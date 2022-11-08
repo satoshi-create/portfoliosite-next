@@ -9,7 +9,11 @@ const Card = ({ value }) => {
   const { sites, title1, title2, bcgClr } = value;
   console.log(bcgClr);
   return (
-    <section className={`parts-grid section-margin ${bcgClr === true && styles.container}`}>
+    <section
+      className={`parts-grid section-margin ${
+        bcgClr === true && styles.container
+      }`}
+    >
       <div className="section-padding">
         <Title title={{ title1, title2 }} />
       </div>
@@ -43,11 +47,13 @@ const Card = ({ value }) => {
                       );
                     })}
                   </ul>
-                  <Link href={githubUrl}>
-                    <a target="_blank">
-                      <GitHub className={styles.icon} />
-                    </a>
-                  </Link>
+                  {githubUrl && (
+                    <Link href={githubUrl}>
+                      <a target="_blank">
+                        <GitHub className={styles.icon} />
+                      </a>
+                    </Link>
+                  )}
                 </div>
               </div>
             </li>

@@ -1,0 +1,20 @@
+.next::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+  display: inline-block;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin: 0 6px 2px 4px;
+}
+
+.list {
+  display: flex;
+}
+
+.item {
+  font-size: 14px;
+  color: #aba4a2;
+  text-transform: capitalize;
+}

@@ -4,7 +4,7 @@ export const projects = [
     src: "/thumb-emakimono.png",
     url: "https://emakimono.com/",
     tag: ["html", "css", "react","next.js"],
-    githubUrl: "https://github.com/satoshi-create/emakimono",
+    githubUrl: "",
   },
   // {
   //   title: "流域図から眺めるハザードマップ",
@@ -18,7 +18,7 @@ export const projects = [
     src: "/thumb-tategaki.png",
     url: "https://tategaki.netlify.app/",
     tag: ["html", "css", "javascript", "jquery"],
-    githubUrl: "https://github.com/satoshi-create/tategaki",
+    githubUrl: "",
   },
 ];
 

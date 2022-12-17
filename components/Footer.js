@@ -4,6 +4,8 @@ import SocialLinks from "./SocialLinks";
 import Links from "./Links"
 
 const Footer = () => {
+  const date = new Date
+  const year = date.getFullYear()
   return (
     <footer className={`parts-grid ${styles.footer}`}>
       <div className={styles.center}>
@@ -18,7 +20,7 @@ const Footer = () => {
         <SocialLinks value={{ styleUl: styles.aboutLinks }} />
         <Links value={{style:styles.footerNavPc}}/>
       </div>
-      <p className={styles.copyright}>@2022 ENGAWAKOBO All rights reserverd</p>
+      <p className={styles.copyright}>{`@${year} ENGAWAKOBO All rights reserverd`}</p>
     </footer>
   );
 };

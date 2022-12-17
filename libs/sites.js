@@ -3,7 +3,7 @@ export const projects = [
     title: "横スクロールで楽しむ絵巻物",
     src: "/thumb-emakimono.png",
     url: "https://emakimono.com/",
-    tag: ["html", "css", "react","next.js"],
+    tag: ["html", "css", "react", "next.js"],
     githubUrl: "",
   },
   // {
@@ -13,6 +13,13 @@ export const projects = [
   //   tag: ["html", "css", "react", "next.js"],
   //   githubUrl: "https://github.com/satoshi-create/river-map",
   // },
+  {
+    title: "縦書きで覚える百人一首",
+    src: "/thumb-tategaki.png",
+    url: "https://hyakuninisshu.vercel.app/",
+    tag: ["html", "css", "react", "next.js"],
+    githubUrl: "",
+  },
   {
     title: "縦書きで読む古典文学",
     src: "/thumb-tategaki.png",

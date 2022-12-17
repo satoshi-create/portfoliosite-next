@@ -4,19 +4,13 @@ import styles from "../styles/GridImages.module.css";
 import Image from "next/image";
 import { gridImages } from "../libs/gridImages";
 
-const GridImages = ({ title }) => {
-  const { title1, bcgClr } = title;
+const GridImages = () => {
   return (
-    <section
-      className={`parts-grid section-margin ${
-        bcgClr === true && styles.gridImages1
-      }`}
-    >
+    <section className={"section-center"}>
       <div className="section-padding">
-        <Title title={{ title1 }} />
         <div className={styles.gridconteinter}>
           {gridImages.map((item, index) => {
-            const { path, name, nameen, AD, author } = item;
+            const { path, name, nameen } = item;
             return (
               <figure className={styles.figure} key={index}>
                 <Image

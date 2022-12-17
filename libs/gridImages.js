@@ -1,4 +1,3 @@
-// import AD from "/affinity_designer_icon.png";
 
 export const gridImages = [
   {

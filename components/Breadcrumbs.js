@@ -4,7 +4,7 @@ import styles from "../styles/Breadcrumbs.module.css";
 
 const Breadcrumbs = ({ lists }) => {
   return (
-    <section className={`parts-grid`}>
+    <section className={`parts-grid ${styles.breadcrumbs}`}>
       <ul className={styles.list}>
         {lists.map((list, index) => {
           const { name, path } = list;

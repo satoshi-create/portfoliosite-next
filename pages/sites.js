@@ -9,7 +9,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 
 const lists = [
   { name: "top", path: "/" },
-  { name: "contents", path: "/about" },
+  { name: "sites", path: "/sites" },
 ];
 
 const sites = () => {

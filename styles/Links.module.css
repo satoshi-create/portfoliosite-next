@@ -2,7 +2,7 @@
   display: flex;
   column-gap: 1rem;
   align-items: center;
-  font-family: var(--title-font);
+  font-family: var(--text-font);
   font-weight: 200;
   text-transform: uppercase;
 }

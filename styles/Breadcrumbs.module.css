@@ -1,3 +1,6 @@
+.breadcrumbs {
+  margin-top: 2rem;
+}
 .next::after {
   content: "";
   width: 5px;

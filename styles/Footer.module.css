@@ -30,7 +30,7 @@
 .aboutLinks {
   composes: links from "./SocialLinks.module.css";
   justify-content: center;
-font-size: clamp(0.875rem, 0.6583rem + 0.9245vw, 1.25rem);
+  font-size: clamp(0.875rem, 0.6583rem + 0.9245vw, 1.25rem);
 }
 .aboutLinks svg {
   background-color: var(--white);
@@ -47,6 +47,9 @@ font-size: clamp(0.875rem, 0.6583rem + 0.9245vw, 1.25rem);
 .footerNavPc {
   composes: navPc from "./Links.module.css";
   color: var(--white);
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 .copyright {
   grid-row: 1;

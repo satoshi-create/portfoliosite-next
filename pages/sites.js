@@ -23,7 +23,6 @@ const sites = () => {
           sites: projects,
           title1: "プロジェクト",
           title2: "サイト",
-          bcgClr: true,
         }}
       />
     </>

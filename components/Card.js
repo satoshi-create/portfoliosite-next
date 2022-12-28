@@ -7,7 +7,7 @@ import Image from "next/image";
 import Button from "./Button";
 
 const Card = ({ value }) => {
-  const { sites, title1, title2, bcgClr } = value;
+  const { sites, title1, title2, bcgClr, linkbtn } = value;
   console.log(bcgClr);
   return (
     <section
@@ -60,15 +60,17 @@ const Card = ({ value }) => {
           );
         })}
       </ul>
-      <div className={styles.btnconteiner}>
-        <Button
-          value={{
-            style: styles.cardbtn,
-            title: "全てのサイトを見る",
-            path: "/sites",
-          }}
-        />
-      </div>
+      {linkbtn && (
+        <div className={styles.btnconteiner}>
+          <Button
+            value={{
+              style: styles.cardbtn,
+              title: "全てのサイトを見る",
+              path: "/sites",
+            }}
+          />
+        </div>
+      )}
     </section>
   );
 };

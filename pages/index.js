@@ -12,10 +12,24 @@ const index = () => {
       <Head />
       <Hero />
       <About title={{ title1: "自己紹介", bcgClr: true }} />
-      <Card value={{ sites: demos, title1: "デモ", title2: "サイト"}} />
-      <Grapics title={{ title1: "グラフィックデザイン", bcgClr: true }} />
       <Card
-        value={{ sites: projects, title1: "プロジェクト", title2: "サイト" }}
+        value={{
+          sites: demos,
+          title1: "デモ",
+          title2: "サイト",
+          linkbtn: true,
+        }}
+      />
+      <Grapics
+        title={{ title1: "グラフィックデザイン", bcgClr: true, linkbtn: true }}
+      />
+      <Card
+        value={{
+          sites: projects,
+          title1: "プロジェクト",
+          title2: "サイト",
+          linkbtn: true,
+        }}
       />
     </>
   );

@@ -8,6 +8,7 @@
 .gridconteinter {
   display: grid;
   gap: 2rem;
+  margin-bottom: 4rem;
 }
 .figure {
   position: relative;
@@ -74,7 +75,12 @@
 .figure:nth-child(5) .image {
   background-color: #9b1dab;
 }
-
+.btnconteiner {
+  text-align: center;
+}
+.grafhicbtn {
+  width: 80%;
+}
 @media screen and (min-width: 768px) {
   .gridconteinter {
     grid-template-areas:
@@ -102,5 +108,13 @@
   .figure:nth-child(5) {
     grid-area: E;
     height: 100%;
+  }
+  .grafhicbtn {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gridconteinter {
+    margin: 8rem 0;
   }
 }

@@ -4,19 +4,19 @@ import Title from "./Title";
 import { GitHub } from "react-feather";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "./Button";
 
 const Card = ({ value }) => {
   const { sites, title1, title2, bcgClr } = value;
   console.log(bcgClr);
   return (
     <section
-      className={`parts-grid section-margin ${
+      className={`parts-grid section-padding ${
         bcgClr === true && styles.container
       }`}
     >
-      <div className="section-padding">
-        <Title title={{ title1, title2 }} />
-      </div>
+      <Title title={{ title1, title2 }} />
+
       <ul className={styles.cards}>
         {sites.map((item, index) => {
           const { title, src, url, tag, githubUrl } = item;
@@ -60,6 +60,15 @@ const Card = ({ value }) => {
           );
         })}
       </ul>
+      <div className={styles.btnconteiner}>
+        <Button
+          value={{
+            style: styles.cardbtn,
+            title: "全てのサイトを見る",
+            path: "/sites",
+          }}
+        />
+      </div>
     </section>
   );
 };

@@ -8,6 +8,7 @@
   width: clamp(8.125rem, 5.9582rem + 9.245vw, 11.875rem);
   transition: var(--transition);
   border: 1px solid var(--accent-clr-01);
+  /* width: 100%; */
 }
 .cmnbtn:hover {
   color: var(--accent-clr-01);

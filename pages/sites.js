@@ -12,7 +12,7 @@ const lists = [
   { name: "contents", path: "/about" },
 ];
 
-const contents = () => {
+const sites = () => {
   return (
     <>
       <Head />
@@ -26,9 +26,8 @@ const contents = () => {
           bcgClr: true,
         }}
       />
-      <Grapics title={{ title1: "グラフィックデザイン", bcgClr: false }} />
     </>
   );
 };
 
-export default contents;
+export default sites;

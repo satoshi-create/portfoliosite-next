@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="parts-grid">
+    <section className={`parts-grid  ${styles.herocontainer}`}>
       <div className={styles.box}>
         <figure
           style={{ position: "relative", width: "100%", height: "80vh" }}
@@ -37,13 +37,14 @@ const Hero = () => {
         <h2 className={`${styles.catch} ${styles.catch1}`}>MARGINAL</h2>
         <h2 className={`${styles.catch} ${styles.catch2}`}>DESIGN</h2>
         <SocialLinks value={{ styleUl: styles.heroLinks }} />
-        <Button
-          value={{
-            style: styles.herobtn,
-            title: "作品を見る",
-            path: "/contents",
-          }}
-        />
+        <div className={styles.herobtn}>
+          <Button
+            value={{
+              title: "作品を見る",
+              path: "/sites",
+            }}
+          />
+        </div>
       </div>
     </section>
   );

@@ -1,0 +1,22 @@
+.modal {
+  display: grid;
+  inset: 0;
+  /* opacity: 0; */
+  place-items: center;
+  position: fixed;
+  /* transform: scale(0); */
+  transition: var(--transition);
+  z-index: 500;
+}
+.MuiBackdrop {
+  background-color: rgba(32, 32, 32, 0.589);
+  cursor: pointer;
+  height: 100%;
+  inset: 0;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+.name {
+  color: var(--white);
+}

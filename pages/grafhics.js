@@ -13,7 +13,13 @@ const grafhics = () => {
     <>
       <Head />
       <Breadcrumbs lists={lists} />
-      <Grapics title={{ title1: "グラフィックデザイン", bcgClr: false }} />
+      <Grapics
+        title={{
+          title1: "グラフィックデザイン",
+          bcgClr: false,
+          linkbtn: false,
+        }}
+      />
     </>
   );
 };

@@ -71,3 +71,9 @@ button {
     padding: 8rem 0;
   }
 } */
+
+.open html,
+.open body{
+  overflow: hidden;
+  height: 100%;
+}

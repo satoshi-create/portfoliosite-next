@@ -31,7 +31,7 @@ const GridImages = ({ title }) => {
       return (
         <div className={styles.gridconteinter}>
           {gridImagesA.slice(0, 5).map((item, index) => {
-            const { id, path, name, nameen, icon } = item;
+            const { id, path, name, nameen, icon, bgc } = item;
             return (
               <figure className={styles.figure} key={index}>
                 <Image
@@ -39,6 +39,7 @@ const GridImages = ({ title }) => {
                   layout="fill"
                   objectFit="cover"
                   className={styles.image}
+                  style={{ backgroundColor: bgc }}
                   alt={nameen}
                   priority
                   placeholder="blur"
@@ -76,7 +77,7 @@ const GridImages = ({ title }) => {
         <>
           <div className={styles.gridconteinter}>
             {gridImagesA.slice(0, 5).map((item, index) => {
-              const { id, path, name, nameen, icon } = item;
+              const { id, path, name, nameen, icon, bgc } = item;
               return (
                 <figure className={styles.figure} key={index}>
                   <Image
@@ -84,6 +85,7 @@ const GridImages = ({ title }) => {
                     layout="fill"
                     objectFit="cover"
                     className={styles.image}
+                    style={{ backgroundColor: bgc }}
                     alt={nameen}
                     priority
                     placeholder="blur"
@@ -117,7 +119,7 @@ const GridImages = ({ title }) => {
           </div>
           <div className={styles.gridconteinterB}>
             {gridImagesA.slice(5, 10).map((item, index) => {
-              const { id, path, name, nameen, icon } = item;
+              const { id, path, name, nameen, icon, bgc } = item;
               return (
                 <figure className={styles.figureB} key={index}>
                   <Image
@@ -125,6 +127,7 @@ const GridImages = ({ title }) => {
                     layout="fill"
                     objectFit="cover"
                     className={styles.image}
+                    style={{ backgroundColor: bgc }}
                     alt={nameen}
                     priority
                     placeholder="blur"

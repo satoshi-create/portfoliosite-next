@@ -17,6 +17,24 @@
   width: 100%;
   z-index: -1;
 }
-.name {
-  color: var(--white);
+.container {
+  width: 90vw;
+  height: 90vh;
+  max-width: 800px;
+  border-radius: 1rem;
+  padding: 20px;
+  -webkit-box-align: center;
+  align-items: center;
+  row-gap: 10px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  place-content: center;
+}
+.figure {
+  border-radius: 1rem;
+}
+
+.image {
+  border-radius: 1rem;
 }

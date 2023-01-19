@@ -1,21 +1,21 @@
 import React, { useContext } from "react";
 import styles from "../styles/Modal.module.css";
 import { ContextComponent } from "../libs/context";
-import { gridImagesA, gridImagesB, gridImagesC } from "../libs/gridImages";
+import { gridImagesA } from "../libs/gridImages";
 
-const Modal = ({ cat }) => {
-  console.log(cat);
+const Modal = () => {
   const { value, setValue, closeModal } = useContext(ContextComponent);
+  console.log(value);
 
-  const arr = () => {
-    if (cat === "gridImagesA") {
-      return gridImagesA;
-    } else {
-      return gridImagesB;
-    }
-  };
+  // const arr = () => {
+  //   if (cat === "gridImagesA") {
+  //     return gridImagesA;
+  //   } else {
+  //     return gridImagesB;
+  //   }
+  // };
 
-  const { name } = arr(cat)[value];
+  const { name } = gridImagesA[value - 1];
 
   return (
     <aside className={styles.modal}>

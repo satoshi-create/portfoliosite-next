@@ -31,7 +31,7 @@ const GridImages = ({ title }) => {
       return (
         <div className={styles.gridconteinter}>
           {gridImagesA.slice(0, 5).map((item, index) => {
-            const { path, name, nameen, icon } = item;
+            const { id, path, name, nameen, icon } = item;
             return (
               <figure className={styles.figure} key={index}>
                 <Image
@@ -60,12 +60,12 @@ const GridImages = ({ title }) => {
                   </figure>
                   <figure
                     className={styles.zoomiconfigure}
-                    onClick={() => openModal(index)}
+                    onClick={() => openModal(id)}
                   >
                     <ZoomIn className={styles.zoomicon} />
                   </figure>
                 </div>
-                {isModalOpen && <Modal cat={"gridImagesA"} />}
+                {isModalOpen && <Modal />}
               </figure>
             );
           })}
@@ -76,7 +76,7 @@ const GridImages = ({ title }) => {
         <>
           <div className={styles.gridconteinter}>
             {gridImagesA.slice(0, 5).map((item, index) => {
-              const { path, name, nameen, icon } = item;
+              const { id, path, name, nameen, icon } = item;
               return (
                 <figure className={styles.figure} key={index}>
                   <Image
@@ -105,7 +105,7 @@ const GridImages = ({ title }) => {
                     </figure>
                     <figure
                       className={styles.zoomiconfigure}
-                      onClick={() => openModal(index)}
+                      onClick={() => openModal(id)}
                     >
                       <ZoomIn className={styles.zoomicon} />
                     </figure>
@@ -117,7 +117,7 @@ const GridImages = ({ title }) => {
           </div>
           <div className={styles.gridconteinterB}>
             {gridImagesA.slice(5, 10).map((item, index) => {
-              const { path, name, nameen, icon } = item;
+              const { id, path, name, nameen, icon } = item;
               return (
                 <figure className={styles.figureB} key={index}>
                   <Image
@@ -146,7 +146,7 @@ const GridImages = ({ title }) => {
                     </figure>
                     <figure
                       className={styles.zoomiconfigure}
-                      onClick={() => openModal(index)}
+                      onClick={() => openModal(id)}
                     >
                       <ZoomIn className={styles.zoomicon} />
                     </figure>
@@ -156,47 +156,6 @@ const GridImages = ({ title }) => {
               );
             })}
           </div>
-          {/* <div className={styles.gridconteinter}>
-            {gridImagesC.map((item, index) => {
-              const { path, name, nameen, icon } = item;
-              return (
-                <figure className={styles.figure} key={index}>
-                  <Image
-                    src={path}
-                    layout="fill"
-                    objectFit="cover"
-                    className={styles.image}
-                    alt={nameen}
-                    priority
-                    placeholder="blur"
-                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmF/vAwADMQFs4YXxygAAAABJRU5ErkJggg=="
-                  />
-                  <div className={styles.info}>
-                    <p className={styles.name}>{name}</p>
-                    <figure className={styles.tooliconfigure}>
-                      {icon.map((item, i) => {
-                        return (
-                          <img
-                            src={item.src}
-                            alt={item.name}
-                            className={styles.tool}
-                            key={i}
-                          />
-                        );
-                      })}
-                    </figure>
-                    <figure
-                      className={styles.zoomiconfigure}
-                      onClick={() => openModal(index)}
-                    >
-                      <ZoomIn className={styles.zoomicon} />
-                    </figure>
-                  </div>
-                  {isModalOpen && <Modal cat={"gridImagesA"} />}
-                </figure>
-              );
-            })}
-          </div> */}
         </>
       );
     }

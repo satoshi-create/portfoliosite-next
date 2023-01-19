@@ -12,7 +12,7 @@ export const ContedtProvider = ({ children }) => {
   const [value, setValue] = useState();
   const [isModalOpen, setisModalOpen] = useState(false);
 
-  const openModal = (i) => {
+  const openModal = (id) => {
     setisModalOpen(true);
     const clientWidth = document.body.clientWidth;
     document.querySelector("html").classList.add("open");
@@ -21,7 +21,7 @@ export const ContedtProvider = ({ children }) => {
     if (diff > 0) {
       document.body.style["padding-right"] = diff + "px";
     }
-    setValue(i);
+    setValue(id);
   };
 
   const closeModal = () => {

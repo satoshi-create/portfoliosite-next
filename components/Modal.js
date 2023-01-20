@@ -32,7 +32,7 @@ const Modal = () => {
             layout="fill"
             objectFit={cover ? "cover" : "contain"}
             className={styles.image}
-            style={{ backgroundColor: bgc }}
+            style={{ backgroundColor: bgc ? bgc : "var(--primary-green-01)" }}
             alt={nameen}
             priority
             placeholder="blur"

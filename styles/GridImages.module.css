@@ -9,22 +9,25 @@
   /* background-color: var(--accent-clr-02); */
 }
 .gridconteinter,
-.gridconteinterB {
+.gridconteinterB,
+.gridconteinterC {
   display: grid;
   gap: 2rem;
   margin-bottom: 2rem;
 }
 .figure,
-.figureB {
+.figureB,
+.figureC {
   position: relative;
   width: 100%;
   height: 30vh;
-  /* cursor: pointer; */
+  cursor: pointer;
   background: var(--primary-green-01);
   border-radius: 20px;
 }
 .figure::after,
-.figureB::after {
+.figureB::after,
+.figureC::after {
   content: "";
   position: absolute;
   top: 0;
@@ -63,15 +66,18 @@
   border-radius: 20px;
 }
 .figure:hover .image,
-.figureB:hover .image {
+.figureB:hover .image,
+.figureC:hover .image {
   opacity: 0.1;
 }
 .figure:hover .info,
-.figureB:hover .info {
+.figureB:hover .info,
+.figureC:hover .info {
   opacity: 1;
 }
 .figure:hover::after,
-.figureB:hover::after {
+.figureB:hover::after,
+.figureC:hover::after {
   opacity: 1;
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
@@ -81,12 +87,14 @@
   background-color: #6e0b0b;
 } */
 .figure:nth-child(4) .image,
-.figureB:nth-child(4) .image {
+.figureB:nth-child(4) .image,
+.figureC:nth-child(4) .image {
   object-position: 50% 30%;
   /* background-color: #4f2750; */
 }
 .figure:nth-child(5) .image,
-.figureB:nth-child(5) .image {
+.figureB:nth-child(5) .image,
+.figureC:nth-child(5) .image {
   /* background-color: #9b1dab; */
 }
 .btnconteiner {
@@ -146,7 +154,7 @@
       "B B A"
       "E C A"
       "E D D";
-    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1.5fr;
     grid-template-rows: repeat(3, 1fr);
   }
   .figureB:nth-child(1) {
@@ -165,6 +173,37 @@
   }
 
   .figureB:nth-child(5) {
+    grid-area: E;
+    height: 100%;
+  }
+  /* .gridconteinterC */
+  .gridconteinterC {
+    grid-template-areas:
+      "C B B A"
+      "C B B A"
+      "D D D E";
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: repeat(3, 150px);
+  } 
+  .figureC:nth-child(1) {
+    grid-area: A;
+    height: 100%;
+  }
+  .figureC:nth-child(2) {
+    grid-area: B;
+    height: 100%;
+  }
+
+  .figureC:nth-child(3) {
+    grid-area: C;
+    height: 100%;
+  }
+  .figureC:nth-child(4) {
+    grid-area: D;
+    height: 100%;
+  }
+
+  .figureC:nth-child(5) {
     grid-area: E;
     height: 100%;
   }

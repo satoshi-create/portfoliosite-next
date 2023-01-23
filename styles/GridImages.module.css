@@ -49,7 +49,7 @@
   display: grid;
   place-items: center;
   row-gap: 1rem;
-  z-index: 100;
+  z-index: 50;
 }
 .name {
   font-family: var(--sub-font);
@@ -176,8 +176,9 @@
     grid-area: E;
     height: 100%;
   }
+
   /* .gridconteinterC */
-  .gridconteinterC {
+  /* .gridconteinterC {
     grid-template-areas:
       "C B B A"
       "C B B A"
@@ -206,7 +207,7 @@
   .figureC:nth-child(5) {
     grid-area: E;
     height: 100%;
-  }
+  } */
 
   .grafhicbtn {
     width: 60%;

@@ -39,7 +39,9 @@ const GridImages = ({ title }) => {
                   layout="fill"
                   objectFit="cover"
                   className={styles.image}
-                  style={{ backgroundColor: bgc ? bgc : "var(--primary-green-01)" }}
+                  style={{
+                    backgroundColor: bgc ? bgc : "var(--primary-green-01)",
+                  }}
                   alt={nameen}
                   priority
                   placeholder="blur"
@@ -47,7 +49,7 @@ const GridImages = ({ title }) => {
                 />
                 <div className={styles.info}>
                   <p className={styles.name}>{name}</p>
-                  <figure className={styles.tooliconfigure}>
+                  {/* <figure className={styles.tooliconfigure}>
                     {icon.map((item, i) => {
                       return (
                         <img
@@ -58,7 +60,7 @@ const GridImages = ({ title }) => {
                         />
                       );
                     })}
-                  </figure>
+                  </figure> */}
                   <figure
                     className={styles.zoomiconfigure}
                     onClick={() => openModal(id)}
@@ -85,7 +87,9 @@ const GridImages = ({ title }) => {
                     layout="fill"
                     objectFit="cover"
                     className={styles.image}
-                    style={{ backgroundColor: bgc ? bgc : "var(--primary-green-01)" }}
+                    style={{
+                      backgroundColor: bgc ? bgc : "var(--primary-green-01)",
+                    }}
                     alt={nameen}
                     priority
                     placeholder="blur"
@@ -93,7 +97,7 @@ const GridImages = ({ title }) => {
                   />
                   <div className={styles.info}>
                     <p className={styles.name}>{name}</p>
-                    <figure className={styles.tooliconfigure}>
+                    {/* <figure className={styles.tooliconfigure}>
                       {icon.map((item, i) => {
                         return (
                           <img
@@ -104,7 +108,7 @@ const GridImages = ({ title }) => {
                           />
                         );
                       })}
-                    </figure>
+                    </figure> */}
                     <figure
                       className={styles.zoomiconfigure}
                       onClick={() => openModal(id)}
@@ -127,7 +131,9 @@ const GridImages = ({ title }) => {
                     layout="fill"
                     objectFit="cover"
                     className={styles.image}
-                    style={{ backgroundColor: bgc ? bgc : "var(--primary-green-01)" }}
+                    style={{
+                      backgroundColor: bgc ? bgc : "var(--primary-green-01)",
+                    }}
                     alt={nameen}
                     priority
                     placeholder="blur"
@@ -135,7 +141,7 @@ const GridImages = ({ title }) => {
                   />
                   <div className={styles.info}>
                     <p className={styles.name}>{name}</p>
-                    <figure className={styles.tooliconfigure}>
+                    {/* <figure className={styles.tooliconfigure}>
                       {icon.map((item, i) => {
                         return (
                           <img
@@ -146,7 +152,7 @@ const GridImages = ({ title }) => {
                           />
                         );
                       })}
-                    </figure>
+                    </figure> */}
                     <figure
                       className={styles.zoomiconfigure}
                       onClick={() => openModal(id)}
@@ -159,50 +165,8 @@ const GridImages = ({ title }) => {
               );
             })}
           </div>
-          <div className={styles.gridconteinterC}>
-            {gridImagesA.slice(10, 15).map((item, index) => {
-              const { id, path, name, nameen, icon, bgc } = item;
-              return (
-                <figure className={styles.figureC} key={index}>
-                  <Image
-                    src={path}
-                    layout="fill"
-                    objectFit="cover"
-                    className={styles.image}
-                    style={{ backgroundColor: bgc ? bgc : "var(--primary-green-01)" }}
-                    alt={nameen}
-                    priority
-                    placeholder="blur"
-                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmF/vAwADMQFs4YXxygAAAABJRU5ErkJggg=="
-                  />
-                  <div className={styles.info}>
-                    <p className={styles.name}>{name}</p>
-                    <figure className={styles.tooliconfigure}>
-                      {icon.map((item, i) => {
-                        return (
-                          <img
-                            src={item.src}
-                            alt={item.name}
-                            className={styles.tool}
-                            key={i}
-                          />
-                        );
-                      })}
-                    </figure>
-                    <figure
-                      className={styles.zoomiconfigure}
-                      onClick={() => openModal(id)}
-                    >
-                      <ZoomIn className={styles.zoomicon} />
-                    </figure>
-                  </div>
-                  {isModalOpen && <Modal cat={"gridImagesA"} />}
-                </figure>
-              );
-            })}
-          </div>
           <div className={styles.gridconteinterB}>
-            {gridImagesA.slice(15, 20).map((item, index) => {
+            {gridImagesA.slice(10, 15).map((item, index) => {
               const { id, path, name, nameen, icon, bgc } = item;
               return (
                 <figure className={styles.figureB} key={index}>
@@ -221,7 +185,7 @@ const GridImages = ({ title }) => {
                   />
                   <div className={styles.info}>
                     <p className={styles.name}>{name}</p>
-                    <figure className={styles.tooliconfigure}>
+                    {/* <figure className={styles.tooliconfigure}>
                       {icon.map((item, i) => {
                         return (
                           <img
@@ -232,7 +196,51 @@ const GridImages = ({ title }) => {
                           />
                         );
                       })}
+                    </figure> */}
+                    <figure
+                      className={styles.zoomiconfigure}
+                      onClick={() => openModal(id)}
+                    >
+                      <ZoomIn className={styles.zoomicon} />
                     </figure>
+                  </div>
+                  {isModalOpen && <Modal cat={"gridImagesA"} />}
+                </figure>
+              );
+            })}
+          </div>
+          <div className={styles.gridconteinter}>
+            {gridImagesA.slice(15, 20).map((item, index) => {
+              const { id, path, name, nameen, icon, bgc } = item;
+              return (
+                <figure className={styles.figure} key={index}>
+                  <Image
+                    src={path}
+                    layout="fill"
+                    objectFit="cover"
+                    className={styles.image}
+                    style={{
+                      backgroundColor: bgc ? bgc : "var(--primary-green-01)",
+                    }}
+                    alt={nameen}
+                    priority
+                    placeholder="blur"
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmF/vAwADMQFs4YXxygAAAABJRU5ErkJggg=="
+                  />
+                  <div className={styles.info}>
+                    <p className={styles.name}>{name}</p>
+                    {/* <figure className={styles.tooliconfigure}>
+                      {icon.map((item, i) => {
+                        return (
+                          <img
+                            src={item.src}
+                            alt={item.name}
+                            className={styles.tool}
+                            key={i}
+                          />
+                        );
+                      })}
+                    </figure> */}
                     <figure
                       className={styles.zoomiconfigure}
                       onClick={() => openModal(id)}

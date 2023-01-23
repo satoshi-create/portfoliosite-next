@@ -16,7 +16,7 @@ const Modal = () => {
   //   }
   // };
 
-  const { name, path, nameen,bgc,cover } = gridImagesA[value - 1];
+  const { name, path, nameen, bgc, cover } = gridImagesA[value - 1];
 
   return (
     <aside className={styles.modal}>
@@ -32,7 +32,7 @@ const Modal = () => {
             layout="fill"
             objectFit={cover ? "cover" : "contain"}
             className={styles.image}
-            style={{ backgroundColor: bgc ? bgc : "var(--primary-green-01)" }}
+            style={{ backgroundColor: bgc ? bgc : "white" }}
             alt={nameen}
             priority
             placeholder="blur"

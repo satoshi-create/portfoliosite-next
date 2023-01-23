@@ -174,7 +174,7 @@ const gridImagesA = [
   },
   {
     id: 20,
-    path: "/kabukiyakusha_02.png",
+    path: "/ogamieizaburo_toyokuni.png",
     name: "尾上栄三郎",
     nameen: "illust-ogamieizabrou",
     icon: [],

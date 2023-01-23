@@ -4,9 +4,9 @@ import { ContedtProvider } from "../libs/context";
 function MyApp({ Component, pageProps }) {
   return (
     <ContedtProvider>
-      <Layout>
+      {/* <Layout> */}
         <Component {...pageProps} />
-      </Layout>
+      {/* </Layout> */}
     </ContedtProvider>
   );
 }

@@ -4,7 +4,7 @@ import { Menu } from "react-feather";
 import Link from "next/link";
 import Links from "./Links";
 
-const Header = () => {
+const Header = ({ fixed}) => {
   const [stickyClass, setStickyClass] = useState("");
 
   const stickNavbar = () => {
@@ -16,7 +16,7 @@ const Header = () => {
     window.addEventListener("scroll", stickNavbar);
   }, []);
   return (
-    <header className={`parts-grid ${styles.header} ${styles[stickyClass]}`}>
+    <header className={`parts-grid ${styles.header} ${fixed && styles[stickyClass]}`}>
       <div className={styles.headerCenter}>
         <Link href="/">
           <a className={styles.titlebox}>

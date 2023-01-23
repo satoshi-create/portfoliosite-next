@@ -6,6 +6,8 @@ import { projects, demos } from "../libs/sites";
 import Head from "../components/Meta";
 import Grapics from "../components/GridImages";
 import Breadcrumbs from "../components/Breadcrumbs";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const lists = [
   { name: "top", path: "/" },
@@ -16,6 +18,7 @@ const sites = () => {
   return (
     <>
       <Head />
+      <Header fixed={true} />
       <Breadcrumbs lists={lists} />
       <Card value={{ sites: demos, title1: "デモ", title2: "サイト" }} />
       <Card
@@ -25,6 +28,7 @@ const sites = () => {
           title2: "サイト",
         }}
       />
+      <Footer />
     </>
   );
 };

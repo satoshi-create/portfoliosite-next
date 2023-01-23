@@ -2,6 +2,8 @@ import React from "react";
 import Grapics from "../components/GridImages";
 import Head from "../components/Meta";
 import Breadcrumbs from "../components/Breadcrumbs";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const lists = [
   { name: "top", path: "/" },
@@ -12,6 +14,7 @@ const grafhics = () => {
   return (
     <>
       <Head />
+      <Header fixed={false} />
       <Breadcrumbs lists={lists} />
       <Grapics
         title={{
@@ -20,6 +23,7 @@ const grafhics = () => {
           linkbtn: false,
         }}
       />
+      <Footer />
     </>
   );
 };

@@ -5,12 +5,15 @@ import Card from "../components/Card";
 import { projects, demos } from "../libs/sites";
 import Head from "../components/Meta";
 import Grapics from "../components/GridImages";
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 
 const index = () => {
   return (
     <>
       <Head />
+      <Header fixed={true}/>
       <Hero />
       <About title={{ title1: "自己紹介", bcgClr: true }} />
       <Card
@@ -32,6 +35,7 @@ const index = () => {
           linkbtn: true,
         }}
       />
+      <Footer/>
     </>
   );
 };

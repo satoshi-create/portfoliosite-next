@@ -6,7 +6,7 @@ import Image from "next/image";
 import { about } from "../libs/about";
 
 const About = ({ title }) => {
-  const { title1, bcgClr } = title;
+  const { title1, bcgClr, btn } = title;
   console.log(bcgClr);
   const [value, setValue] = useState(0);
 
@@ -20,7 +20,6 @@ const About = ({ title }) => {
       <Title title={{ title1 }} />
       <div className={styles.tabcenter}>
         <div className={styles.tabBox}>
-          {/* about container */}
           <div className={styles.tabcontainer}>
             {about.map((item, index) => {
               const { title } = item;
@@ -37,17 +36,19 @@ const About = ({ title }) => {
               );
             })}
           </div>
-          {/* about info */}
+
           <article className={styles.article}>
             <p className={styles.desc}>{desc}</p>
-            <div className={styles.aboutbtn}>
-              <Button
-                value={{
-                  title: "MORE",
-                  path: "/about",
-                }}
-              />
-            </div>
+            {btn && (
+              <div className={styles.aboutbtn}>
+                <Button
+                  value={{
+                    title: "MORE",
+                    path: "/about",
+                  }}
+                />
+              </div>
+            )}
           </article>
         </div>
         <figure className={styles.figure}>

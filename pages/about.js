@@ -16,7 +16,7 @@ const about = () => {
       <Head pagetitle={"アバウト"} pageDesc={"アバウトページです"} />
       <Header fixed={true} />
       <Breadcrumbs lists={lists} />
-      <About title={{ title1: "自己紹介", bcgClr: false }} />
+      <About title={{ title1: "自己紹介", bcgClr: false, btn: false }} />
       <Footer />
     </>
   );

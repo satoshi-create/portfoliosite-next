@@ -6,7 +6,7 @@ const gridImagesA = [
     nameen: "illust-yorunoume",
     icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
     bgc: "",
-    cover: true,
+    cover: false,
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ const gridImagesA = [
     nameen: "magaillust-unryu",
     icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
     bgc: "#4f2750",
-    cover: true,
+    cover: false,
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const gridImagesA = [
     nameen: "illust-sensuwomotsuonne",
     icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
     bgc: "#9b1dab",
-    cover: true,
+    cover: false,
   },
   {
     id: 6,
@@ -134,7 +134,7 @@ const gridImagesA = [
     nameen: "illust-kamikiri",
     icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
     bgc: "rgb(118 65 65)",
-    cover: true,
+    cover: false,
   },
   {
     id: 16,
@@ -143,7 +143,7 @@ const gridImagesA = [
     nameen: "illust-ichikawayoozou",
     icon: [],
     bgc: "#52535b",
-    cover: true,
+    cover: false,
   },
   {
     id: 17,
@@ -170,7 +170,7 @@ const gridImagesA = [
     nameen: "illust-sansyo",
     icon: [],
     bgc: "#bb3488",
-    cover: true,
+    cover: false,
   },
   {
     id: 20,
@@ -179,7 +179,7 @@ const gridImagesA = [
     nameen: "illust-ogamieizabrou",
     icon: [],
     bgc: "#3c3c3c",
-    cover: true,
+    cover: false,
   },
 ];
 export { gridImagesA };

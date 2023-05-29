@@ -21,6 +21,9 @@ const Meta = ({ pagetitle, pageDesc }) => {
   const router = useRouter();
   const url = `${siteUrl}${router.asPath}`;
 
+  const img = "/ogp.jpg";
+  const imgUrl = img.startsWith("https") ? img : `${siteUrl}${img}`;
+
   return (
     <Head>
       <title>{title}</title>
@@ -35,6 +38,11 @@ const Meta = ({ pagetitle, pageDesc }) => {
       <meta property="og:site_name" content={siteTitle} />
       <meta property="og:type" content={siteType} />
       <meta property="og:locale" content={siteLocale} />
+
+      <meta property="og:image" content={imgUrl} />
+      <meta property="og:image:width" content="600" />
+      <meta property="og:image:height" content="849" />
+      <meta name="twitter:card" content="summary_large_image" />
 
       <link rel="icon" href={siteIcon} />
       <link rel="apple-touch-icon" href={siteIcon} />

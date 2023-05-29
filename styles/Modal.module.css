@@ -45,9 +45,24 @@
 .toggleIcon {
   width: 30px;
   height: 30px;
-  transition: var(--transition);
+  display: flex;
+  place-items: center;
 }
 .toggleIconLeft {
   stroke: red;
   fill: white;
+}
+.togglebtncontainer {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  font-family: var(--title-font);
+  align-items: center;
+}
+.togglefont {
+  color: #9b9b9b;
+}
+.active.togglefont {
+  font-weight: bold;
+  color: black;
 }

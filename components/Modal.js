@@ -39,18 +39,36 @@ const Modal = () => {
           />
         </figure>
         {pathred && (
-          <figure
-            className={`button ${styles.togglebtn}`}
-            onClick={() => setToggleBtn(!toggleBtn)}
-          >
-            {toggleBtn ? (
-              <ToggleRight className={styles.toggleIcon} />
-            ) : (
-              <ToggleLeft
-                className={`${styles.toggleIconLeft} ${styles.toggleIcon}`}
-              />
-            )}
-          </figure>
+          <div className={styles.togglebtncontainer}>
+            <p
+              className={
+                toggleBtn
+                  ? ` ${styles.togglefont}`
+                  : `${styles.active}${styles.togglefont}`
+              }
+            >
+              黒絵
+            </p>
+            <figure
+              className={`button ${styles.togglebtn}`}
+              onClick={() => setToggleBtn(!toggleBtn)}
+            >
+              {toggleBtn ? (
+                <ToggleRight className={styles.toggleIcon} />
+              ) : (
+                <ToggleLeft className={styles.toggleIcon} />
+              )}
+            </figure>
+            <p
+              className={
+                toggleBtn
+                  ? `${styles.active}${styles.togglefont}`
+                  : ` ${styles.togglefont}`
+              }
+            >
+              赤絵
+            </p>
+          </div>
         )}
       </div>
     </aside>

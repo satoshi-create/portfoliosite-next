@@ -1,6 +1,11 @@
-import { GitHub, Twitter, Youtube } from "react-feather";
+import { GitHub, Twitter, Youtube, Linkedin } from "react-feather";
 
 export const socialLinks = [
+  {
+    name: "Linkedin",
+    icon: <Linkedin />,
+    path: "https://www.linkedin.com/in/satoprofile/",
+  },
   {
     name: "github",
     icon: <GitHub />,

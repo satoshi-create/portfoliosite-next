@@ -1,34 +1,33 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styles from "../styles/Modal.module.css";
 import { ContextComponent } from "../libs/context";
 import { gridImagesA } from "../libs/gridImages";
 import Image from "next/image";
+import { ToggleLeft, ToggleRight } from "react-feather";
 
 const Modal = () => {
   const { value, setValue, closeModal } = useContext(ContextComponent);
   console.log(value);
 
-  // const arr = () => {
-  //   if (cat === "gridImagesA") {
-  //     return gridImagesA;
-  //   } else {
-  //     return gridImagesB;
-  //   }
-  // };
+  const [toggleBtn, setToggleBtn] = useState(true);
+  console.log(toggleBtn);
 
-  const { name, path, nameen, bgc, cover } = gridImagesA[value - 1];
+  useEffect(() => {
+    setToggleBtn(true);
+  }, []);
+
+  const { name, path, pathred, nameen, bgc, cover } = gridImagesA[value - 1];
 
   return (
     <aside className={styles.modal}>
       <div className={styles.MuiBackdrop} onClick={closeModal}></div>
       <div className={styles.container}>
-        {/* <h4 className={styles.name}>{name}</h4> */}
         <figure
           className={styles.figure}
           style={{ position: "relative", width: "90%", height: "90%" }}
         >
           <Image
-            src={path}
+            src={toggleBtn ? path : pathred}
             layout="fill"
             objectFit={cover ? "cover" : "contain"}
             className={styles.image}
@@ -36,9 +35,23 @@ const Modal = () => {
             alt={nameen}
             priority
             placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmF/vAwADMQFs4YXxygAAAABJRU5ErkJggg=="
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR4 2mNkmF/vAwADMQFs4YXxygAAAABJRU5ErkJggg=="
           />
         </figure>
+        {pathred && (
+          <figure
+            className={`button ${styles.togglebtn}`}
+            onClick={() => setToggleBtn(!toggleBtn)}
+          >
+            {toggleBtn ? (
+              <ToggleRight className={styles.toggleIcon} />
+            ) : (
+              <ToggleLeft
+                className={`${styles.toggleIconLeft} ${styles.toggleIcon}`}
+              />
+            )}
+          </figure>
+        )}
       </div>
     </aside>
   );

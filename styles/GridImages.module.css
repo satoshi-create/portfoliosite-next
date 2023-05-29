@@ -21,7 +21,7 @@
   position: relative;
   width: 100%;
   height: 30vh;
-  cursor: pointer;
+  /* cursor: pointer; */
   background: var(--primary-green-01);
   border-radius: 20px;
 }

@@ -20,7 +20,8 @@ const gridImagesA = [
   },
   {
     id: 3,
-    path: "/amazoness.png",
+    path: "/amazoness_black.png",
+    pathred: "/amazoness_red.png",
     name: "アマゾネス",
     nameen: "illust-amazoness",
     icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
@@ -75,6 +76,7 @@ const gridImagesA = [
   {
     id: 9,
     path: "/kisyu_black.png",
+    pathred: "/kishu_red.png",
     name: "騎手",
     nameen: "illust-kishu",
     icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
@@ -101,7 +103,8 @@ const gridImagesA = [
   },
   {
     id: 12,
-    path: "/war_red.png",
+    path: "/war_black.png",
+    pathred: "/war_red.png",
     name: "重装歩兵",
     nameen: "illust-zyusouhohei",
     tool: "affinity designer",

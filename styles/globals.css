@@ -24,7 +24,9 @@
   --title-font: "Noto Sans JP", sans-serif;
   --text-font: Arial, Helvetica, sans-serif;
   --sub-font: "Kaisei Decol", serif;
+  --sub-font-maru: "Zen Maru Gothic", sans-serif;
 }
+
 body {
   font-family: var(--text-font);
   font-size: 1.6rem;
@@ -73,7 +75,7 @@ button {
 } */
 
 .open html,
-.open body{
+.open body {
   overflow: hidden;
   height: 100%;
 }

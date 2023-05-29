@@ -8,9 +8,9 @@ class MyDocument extends Document {
       <Html lang={siteLang}>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
+            href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Montserrat&family=Noto+Sans+JP&family=Zen+Maru+Gothic:wght@400;700;900&display=swap"
             rel="stylesheet"
-          />
+          ></link>
         </Head>
         <body>
           <Main />

@@ -21,7 +21,7 @@ const Meta = ({ pagetitle, pageDesc }) => {
   const router = useRouter();
   const url = `${siteUrl}${router.asPath}`;
 
-  const img = "/ogp.jpg";
+  const img = "/ogp.png";
   const imgUrl = img.startsWith("https") ? img : `${siteUrl}${img}`;
 
   return (

@@ -26,7 +26,7 @@ const gridImagesA = [
     nameen: "illust-amazoness",
     icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
     bgc: "",
-    cover: true,
+    cover: false,
   },
   {
     id: 4,
@@ -81,7 +81,7 @@ const gridImagesA = [
     nameen: "illust-kishu",
     icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
     bgc: "",
-    cover: true,
+    cover: false,
   },
   {
     id: 10,
@@ -110,7 +110,7 @@ const gridImagesA = [
     tool: "affinity designer",
     icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
     bgc: "#6e0b0b",
-    cover: true,
+    cover: false,
   },
   {
     id: 13,

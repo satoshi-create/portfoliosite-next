@@ -27,7 +27,7 @@ const Modal = () => {
           style={{ position: "relative", width: "90%", height: "90%" }}
         >
           <Image
-            src={toggleBtn ? pathred : path}
+            src={toggleBtn ? path : pathred}
             layout="fill"
             objectFit={cover ? "cover" : "contain"}
             className={styles.image}

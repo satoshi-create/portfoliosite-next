@@ -48,8 +48,8 @@
   display: flex;
   place-items: center;
 }
-.toggleIconLeft {
-  stroke: red;
+.toggleIconRed {
+  stroke: var(--accent-clr-03);
   fill: white;
 }
 .togglebtncontainer {
@@ -62,7 +62,12 @@
 .togglefont {
   color: #9b9b9b;
 }
+
 .active.togglefont {
   font-weight: bold;
-  color: black;
+  color: var(--black);
+}
+.active.togglefontRed {
+  font-weight: bold;
+  color: var(--accent-clr-03);
 }

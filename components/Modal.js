@@ -44,7 +44,7 @@ const Modal = () => {
               className={
                 toggleBtn
                   ? ` ${styles.togglefont}`
-                  : `${styles.active}${styles.togglefont}`
+                  : `${styles.active} ${styles.togglefont}`
               }
             >
               黒絵
@@ -54,7 +54,9 @@ const Modal = () => {
               onClick={() => setToggleBtn(!toggleBtn)}
             >
               {toggleBtn ? (
-                <ToggleRight className={styles.toggleIcon} />
+                <ToggleRight
+                  className={`${styles.toggleIcon} ${styles.toggleIconRed}`}
+                />
               ) : (
                 <ToggleLeft className={styles.toggleIcon} />
               )}
@@ -62,7 +64,7 @@ const Modal = () => {
             <p
               className={
                 toggleBtn
-                  ? `${styles.active}${styles.togglefont}`
+                  ? `${styles.active} ${styles.togglefontRed}`
                   : ` ${styles.togglefont}`
               }
             >

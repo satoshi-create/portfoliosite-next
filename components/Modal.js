@@ -44,31 +44,31 @@ const Modal = () => {
               className={
                 toggleBtn
                   ? ` ${styles.togglefont}`
-                  : `${styles.active} ${styles.togglefont}`
+                  : `${styles.active} ${styles.togglefontRed}`
               }
             >
-              黒絵
+              赤絵
             </p>
             <figure
               className={`button ${styles.togglebtn}`}
               onClick={() => setToggleBtn(!toggleBtn)}
             >
               {toggleBtn ? (
-                <ToggleRight
+                <ToggleRight className={styles.toggleIcon} />
+              ) : (
+                <ToggleLeft
                   className={`${styles.toggleIcon} ${styles.toggleIconRed}`}
                 />
-              ) : (
-                <ToggleLeft className={styles.toggleIcon} />
               )}
             </figure>
             <p
               className={
                 toggleBtn
-                  ? `${styles.active} ${styles.togglefontRed}`
+                  ? `${styles.active} ${styles.togglefont}`
                   : ` ${styles.togglefont}`
               }
             >
-              赤絵
+              黒絵
             </p>
           </div>
         )}

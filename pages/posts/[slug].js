@@ -7,14 +7,23 @@ import Footer from "../../components/Footer";
 import { marked } from "marked";
 import Image from "next/image";
 
-const Post = ({ frontMatter, content }) => {
-  console.log(frontMatter);
-  console.log(content);
+const Post = ({ frontMatter, content, slug }) => {
+  const lists = [
+    { name: "top", path: "/" },
+    { name: "blog", path: "/blog" },
+    { name: slug, path: slug },
+    // { name: `${slug}`, path: slug },
+  ];
+
   return (
     <>
-      <Head pagetitle={"ブログ"} pageDesc={"ブログページです"} />
+      <Head
+        pagetitle={frontMatter.title}
+        pageDesc={frontMatter.description}
+        pageImg={frontMatter.image}
+      />
       <Header fixed={true} />
-      {/* <Breadcrumbs lists={lists} /> */}
+      <Breadcrumbs lists={lists} />
       <article className="prose prose-lg max-w-none parts-grid section-padding">
         <div className="border">
           <Image
@@ -40,7 +49,7 @@ export async function getStaticPaths() {
       slug: fileName.replace(/\.md$/, ""),
     },
   }));
-  console.log("paths:", paths);
+  // console.log("paths:", paths);
   return {
     paths,
     fallback: false,
@@ -49,9 +58,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const file = fs.readFileSync(`posts/${params.slug}.md`, "utf-8");
-  console.log(file);
+  // console.log(file);
   const { data, content } = matter(file);
-  return { props: { frontMatter: data, content } };
+  return { props: { frontMatter: data, content, slug: params.slug } };
 }
 
 export default Post;

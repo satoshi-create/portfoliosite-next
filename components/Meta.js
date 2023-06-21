@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Router from "next/dist/server/router";
 
-const Meta = ({ pagetitle, pageDesc }) => {
+const Meta = ({ pagetitle, pageDesc, pageImg }) => {
   const {
     siteTitle,
     siteDesc,
@@ -21,8 +21,10 @@ const Meta = ({ pagetitle, pageDesc }) => {
   const router = useRouter();
   const url = `${siteUrl}${router.asPath}`;
 
-  const img = "/ogp.png";
-  const imgUrl = img.startsWith("https") ? img : `${siteUrl}${img}`;
+  const img = "ogp.png";
+  const imgUrl = img.startsWith("https") ? img : `${siteUrl}/${img}`;
+
+  const ogpImage = pageImg ? `${siteUrl}/${pageImg}` : imgUrl;
 
   return (
     <Head>
@@ -39,7 +41,7 @@ const Meta = ({ pagetitle, pageDesc }) => {
       <meta property="og:type" content={siteType} />
       <meta property="og:locale" content={siteLocale} />
 
-      <meta property="og:image" content={imgUrl} />
+      <meta property="og:image" content={ogpImage} />
       <meta property="og:image:width" content="600" />
       <meta property="og:image:height" content="849" />
       <meta name="twitter:card" content="summary_large_image" />

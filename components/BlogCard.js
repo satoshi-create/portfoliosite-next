@@ -11,18 +11,21 @@ const BlogCard = ({ posts }) => {
       <ul className={styles.blogCards}>
         {posts.map((post) => {
           const { slug, frontMatter } = post;
-          const { image, title } = frontMatter;
+          const { image, title, date } = frontMatter;
           return (
             <li key={slug} className={styles.blogCard}>
-              <Image
-                src={`/${image}`}
-                width={1200}
-                height={602}
-                layout="responsive"
-                alt={title}
-              />
               <Link href={`posts/${slug}`}>
-                <a>{title}</a>
+                <a>
+                  <Image
+                    src={`/${image}`}
+                    width={1200}
+                    height={602}
+                    layout="responsive"
+                    alt={title}
+                  />
+                  <p>{title}</p>
+                  <small>{date}</small>
+                </a>
               </Link>
             </li>
           );

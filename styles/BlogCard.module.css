@@ -1,0 +1,28 @@
+.blogCards {
+  transition: var(--transition);
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 4rem;
+  padding: 1rem;
+  background-color: var(--primary-green-04);
+  border-radius: 10px;
+}
+.blogCards:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  transform: scale(1.02);
+}
+@media screen and (min-width: 768px) {
+  .blogCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .blogCard {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .blogCards {
+    flex: 0 0 calc(33% - 2rem);
+  }
+}

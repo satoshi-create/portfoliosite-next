@@ -21,7 +21,7 @@ const BlogCard = ({ posts }) => {
                 layout="responsive"
                 alt={title}
               />
-              <Link href={`post/${slug}`}>
+              <Link href={`posts/${slug}`}>
                 <a>{title}</a>
               </Link>
             </li>

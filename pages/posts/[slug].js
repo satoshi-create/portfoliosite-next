@@ -4,8 +4,17 @@ import Head from "../../components/Meta";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import { marked } from "marked";
+// import { marked } from "marked";
 import Image from "next/image";
+
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import rehypeStringify from "rehype-stringify";
+
+import remarkToc from "remark-toc";
+
+import { visit } from "unist-util-visit";
 
 const Post = ({ frontMatter, content, slug }) => {
   const lists = [
@@ -35,7 +44,8 @@ const Post = ({ frontMatter, content, slug }) => {
         </div>
         <h1 className="mt-12">{frontMatter.title}</h1>
         <span>{frontMatter.date}</span>
-        <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+        <div dangerouslySetInnerHTML={{ __html: content }}></div>
+        {/* <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div> */}
       </article>
       <Footer />
     </>
@@ -60,7 +70,33 @@ export async function getStaticProps({ params }) {
   const file = fs.readFileSync(`posts/${params.slug}.md`, "utf-8");
   // console.log(file);
   const { data, content } = matter(file);
-  return { props: { frontMatter: data, content, slug: params.slug } };
+
+  // const checkAST = () => {
+  //   return (tree) => {
+  //     visit(tree, (node) => {
+  //       console.log(node);
+  //     });
+  //   };
+  // };
+
+  const result = await unified()
+    .use(remarkParse)
+    .use(checkAST) //mdastにアクセス
+    .use(remarkRehype)
+    .use(checkAST) //hastにアクセス
+    .use(rehypeStringify)
+    .process(content);
+
+  //  const result = await unified()
+  //    .use(remarkParse)
+  //    .use(remarkRehype)
+  //    .use(rehypeStringify)
+  //    .process(content);
+  //  console.log("result:", result.toString());
+
+  return {
+    props: { frontMatter: data, content: result.toString(), slug: params.slug },
+  };
 }
 
 export default Post;

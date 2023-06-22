@@ -11,6 +11,7 @@ import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
+import rehypeSlug from "rehype-slug"
 
 import remarkToc from "remark-toc";
 
@@ -71,18 +72,22 @@ export async function getStaticProps({ params }) {
   // console.log(file);
   const { data, content } = matter(file);
 
-  // const checkAST = () => {
-  //   return (tree) => {
-  //     visit(tree, (node) => {
-  //       console.log(node);
-  //     });
-  //   };
-  // };
+  const checkAST = () => {
+    return (tree) => {
+      visit(tree, (node) => {
+        console.log(node);
+      });
+    };
+  };
 
   const result = await unified()
     .use(remarkParse)
+    .use(remarkToc, {
+      heading: "目次",
+    })
     .use(checkAST) //mdastにアクセス
     .use(remarkRehype)
+    .use(rehypeSlug)
     .use(checkAST) //hastにアクセス
     .use(rehypeStringify)
     .process(content);

@@ -1,8 +1,9 @@
 ---
-title: 'Next.jsでmarkdownブログを構築'
-date: '2022-07-13'
-description: 'Next.jsでmarkdownファイルを利用したブログの構築手順を解説しています。'
+title: "Next.jsでmarkdownブログを構築"
+date: "2022-07-13"
+description: "Next.jsでmarkdownファイルを利用したブログの構築手順を解説しています。"
 image: bijinga.png
+categories: ["react"]
 ---
 
 ## 目次

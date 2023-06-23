@@ -14,6 +14,7 @@ import rehypeStringify from "rehype-stringify";
 import rehypeSlug from "rehype-slug";
 
 import remarkToc from "remark-toc";
+import { toc } from "mdast-util-toc";
 
 import { visit } from "unist-util-visit";
 import remarkPrism from "remark-prism";
@@ -23,6 +24,13 @@ import rehypeParse from "rehype-parse";
 import rehypeReact from "rehype-react";
 
 import Link from "next/link";
+
+const getToc = (options) => {
+  return (node) => {
+    const result = toc(node, options);
+    node.children = [result.map];
+  };
+};
 
 // const MyLink = ({ children, href }) => {
 //   return (
@@ -77,7 +85,7 @@ const toReactNode = (content) => {
     .processSync(content).result;
 };
 
-const Post = ({ frontMatter, content, slug }) => {
+const Post = ({ frontMatter, content, slug, toc }) => {
   const lists = [
     { name: "top", path: "/" },
     { name: "blog", path: "/blog" },
@@ -105,7 +113,23 @@ const Post = ({ frontMatter, content, slug }) => {
         </div>
         <h1 className="mt-12">{frontMatter.title}</h1>
         <span>{frontMatter.date}</span>
-        {toReactNode(content)}
+        {frontMatter.categories.map((category) => (
+          <span key={category}>
+            <Link href={`/categories/${category}`}>
+              <a>{category}</a>
+            </Link>
+          </span>
+        ))}
+        <div className="grid grid-cols-12">
+          <div className="col-span-9">{toReactNode(content)}</div>
+          <div className="col-span-3">
+            <div
+              className="sticky top-[50px]"
+              dangerouslySetInnerHTML={{ __html: toc }}
+            ></div>
+          </div>
+        </div>
+        {/* {toReactNode(content)} */}
         {/* <div dangerouslySetInnerHTML={{ __html: content }}></div> */}
         {/* <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div> */}
       </article>
@@ -141,6 +165,16 @@ export async function getStaticProps({ params }) {
   //   };
   // };
 
+  const toc = await unified()
+    .use(remarkParse)
+    .use(getToc, {
+      heading: "目次",
+      tight: true,
+    })
+    .use(remarkRehype)
+    .use(rehypeStringify)
+    .process(content);
+
   const result = await unified()
     .use(remarkParse)
     .use(remarkPrism, {
@@ -164,7 +198,12 @@ export async function getStaticProps({ params }) {
   //  console.log("result:", result.toString());
 
   return {
-    props: { frontMatter: data, content: result.toString(), slug: params.slug },
+    props: {
+      frontMatter: data,
+      content: result.toString(),
+      slug: params.slug,
+      toc: toc.toString(),
+    },
   };
 }
 

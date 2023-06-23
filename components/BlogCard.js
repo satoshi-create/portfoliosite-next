@@ -14,7 +14,7 @@ const BlogCard = ({ posts }) => {
           const { image, title, date } = frontMatter;
           return (
             <li key={slug} className={styles.blogCard}>
-              <Link href={`posts/${slug}`}>
+              <Link href={`/posts/${slug}`}>
                 <a>
                   <Image
                     src={`/${image}`}

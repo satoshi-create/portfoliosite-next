@@ -2,8 +2,8 @@ import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
 import Image from "next/image";
-import { remark } from "remark";
-import remarkHtml from "remark-html";
+
+import { markdownToHtml, getAllslug } from "../../libs/markdown";
 
 const Post = ({ frontMatter, content }) => {
   console.log(frontMatter);
@@ -18,13 +18,7 @@ const Post = ({ frontMatter, content }) => {
 };
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync("posts");
-  const paths = files.map((fileName) => ({
-    params: {
-      slug: fileName.replace(/\.md$/, ""),
-    },
-  }));
-  // console.log("paths:", paths);
+  const paths = getAllslug("posts");
   return {
     paths,
     fallback: false,
@@ -35,14 +29,14 @@ export async function getStaticProps({ params }) {
   const file = fs.readFileSync(`posts/${params.slug}.md`, "utf-8");
   const { data, content } = matter(file);
 
-  const result = await remark().use(remarkHtml).process(content);
+  const result = await markdownToHtml(content);
 
   console.log(result);
 
   return {
     props: {
       frontMatter: data,
-      content: result.toString(),
+      content: result,
       // slug: params.slug,
       // toc: toc.toString(),
     },

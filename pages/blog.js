@@ -10,14 +10,14 @@ import Link from "next/link";
 import fs from "fs";
 // front-matter、front-matter以外を取り出すモジュール
 import matter from "gray-matter";
-
+import Pagination from "../components/Pagination";
 
 const lists = [
   { name: "top", path: "/" },
   { name: "blog", path: "/blog" },
 ];
 
-const blog = ({ posts }) => {
+const blog = ({ posts, pages }) => {
   console.log(posts);
   return (
     <>
@@ -25,10 +25,18 @@ const blog = ({ posts }) => {
       <Header fixed={true} />
       <Breadcrumbs lists={lists} />
       <BlogCard posts={posts} />
+      <Pagination pages={pages} />
       <Footer />
     </>
   );
 };
+
+const PAGE_SIZE = 2;
+
+// ページ数を配列で取得
+const range = (start, end, length = end - start + 1) =>
+  Array.from({ length }, (_, i) => start + i);
+// [1, 2, 3];
 
 export const getStaticProps = () => {
   // readFileSync:ファイルの中身を読む
@@ -46,13 +54,16 @@ export const getStaticProps = () => {
     };
   });
 
+  const pages = range(1, Math.ceil(posts.length / PAGE_SIZE));
+
   const sortedPosts = posts.sort((postA, postB) =>
     new Date(postA.frontMatter.date) > new Date(postB.frontMatter.date) ? -1 : 1
   );
 
   return {
     props: {
-      posts:sortedPosts
+      posts: sortedPosts.slice(0, PAGE_SIZE),
+      pages,
     },
   };
 };

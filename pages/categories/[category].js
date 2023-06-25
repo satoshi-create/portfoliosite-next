@@ -39,7 +39,8 @@ export const getStaticProps = ({ params }) => {
   });
 
   const category = params.category;
-
+  console.log(category);
+  console.log(posts);
   const filteredPosts = posts.filter((post) => {
     return post.frontMatter.categories.includes(category);
   });
@@ -57,7 +58,7 @@ export const getStaticProps = ({ params }) => {
 };
 
 export const getStaticPaths = () => {
-  const categories = ["react", "laravel"];
+  const categories = ["react", "laravel", "javascript"];
   const paths = categories.map((category) => ({ params: { category } }));
   console.log(paths);
   return {

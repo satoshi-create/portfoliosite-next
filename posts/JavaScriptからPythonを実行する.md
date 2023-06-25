@@ -2,7 +2,7 @@
 title: JavaScriptからPythonを実行する
 date: "2023-01-22"
 description: Node.js製のpython-shellモジュールを使うことで、JavaScriptからPythonへのデータの送受信が可能に。Pythonスクリプトを実行し、結果を受け取る方法も解説します。
-image: bijinga.png
+image: funade.png
 categories: ["react"]
 ---
 
@@ -10,7 +10,8 @@ categories: ["react"]
 
 ## 「python-shell」とは何か
 
-Python を JavaScript から実行するということは、Web サーバー上で Python スクリプトを動かすことが可能となることです。
+Python を JavaScript から
+実行するということは、Web サーバー上で Python スクリプトを動かすことが可能となることです。
 
 今回紹介するのは、Node.js 製の「python-shell」と呼ばれるモジュールを使った方法です。
 

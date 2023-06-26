@@ -16,10 +16,20 @@ const gridImagesA = [
     tool: "affinity designer",
     icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
     bgc: "#6e0b0b",
-    cover: true,
+    cover: false,
   },
   {
     id: 3,
+    path: "/kusakagerou.png",
+    name: "クサカゲロウ",
+    nameen: "illust-kusakagerou",
+    tool: "affinity designer",
+    icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
+    bgc: "rgb(255 215 215)",
+    cover: false,
+  },
+  {
+    id: 4,
     path: "/amazoness_black.png",
     pathred: "/amazoness_red.png",
     name: "アマゾネス",
@@ -28,15 +38,7 @@ const gridImagesA = [
     bgc: "",
     cover: false,
   },
-  {
-    id: 4,
-    path: "/unryuu.png",
-    name: "雲龍",
-    nameen: "magaillust-unryu",
-    icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
-    bgc: "#4f2750",
-    cover: false,
-  },
+
   {
     id: 5,
     path: "/sensuwomotsuonna.png",
@@ -182,6 +184,16 @@ const gridImagesA = [
     nameen: "illust-ogamieizabrou",
     icon: [],
     bgc: "#3c3c3c",
+    cover: false,
+  },
+
+  {
+    id: 21,
+    path: "/unryuu.png",
+    name: "雲龍",
+    nameen: "magaillust-unryu",
+    icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
+    bgc: "#4f2750",
     cover: false,
   },
 ];

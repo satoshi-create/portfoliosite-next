@@ -193,7 +193,8 @@ export async function getStaticProps({ params }) {
     .process(content);
 
   const result = await unified()
-    .use(remarkParse) //markdown -> mdast の変換
+    .use(remarkParse)
+    //markdown -> mdast の変換
     .use(remarkPrism, {
       plugins: ["line-numbers"],
     })

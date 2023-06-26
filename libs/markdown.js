@@ -1,9 +1,13 @@
 import { remark } from "remark";
 import remarkHtml from "remark-html";
 import fs from "fs";
+import remarkGfm from "remark-gfm";
 
 export const markdownToHtml = async (htmlContent) => {
-  const result = await remark().use(remarkHtml).process(htmlContent);
+  const result = await remark()
+    .use(remarkGfm)
+    .use(remarkHtml)
+    .process(htmlContent);
   return result.toString();
 };
 

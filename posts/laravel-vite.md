@@ -19,6 +19,7 @@ Laravel のデフォルトのフロントエンドアセットバンドラーが
 [blog](/)
 [Vite](https://ja.vitejs.dev/)
 
+https://twitter.com/ganja_tuber
 
 
 <img src="http://localhost:3000/amazoness_red.png" alt="Next.jsのWelcomeページ" width="897" height="937" />

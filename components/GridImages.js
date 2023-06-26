@@ -210,7 +210,7 @@ const GridImages = ({ title }) => {
             })}
           </div>
           <div className={styles.gridconteinter}>
-            {gridImagesA.slice(15, 20).map((item, index) => {
+            {gridImagesA.slice(15, 21).map((item, index) => {
               const { id, path, name, nameen, icon, bgc } = item;
               return (
                 <figure className={styles.figure} key={index}>

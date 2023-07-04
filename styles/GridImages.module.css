@@ -89,7 +89,7 @@
 .figure:nth-child(4) .image,
 .figureB:nth-child(4) .image,
 .figureC:nth-child(4) .image {
-  object-position: 50% 30%;
+  object-position: 50% 50%;
   /* background-color: #4f2750; */
 }
 .figure:nth-child(5) .image,

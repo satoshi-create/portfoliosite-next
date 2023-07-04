@@ -13,9 +13,9 @@ const index = () => {
   return (
     <>
       <Head />
-      <Header fixed={true}/>
+      <Header fixed={true} />
       <Hero />
-      <About title={{ title1: "自己紹介", bcgClr: true,btn:true}} />
+      <About title={{ title1: "自己紹介", bcgClr: true, btn: true }} />
       <Card
         value={{
           sites: demos,
@@ -25,7 +25,12 @@ const index = () => {
         }}
       />
       <Grapics
-        title={{ title1: "グラフィックデザイン", bcgClr: true, linkbtn: true }}
+        title={{
+          title1: "グラフィック",
+          title2: "デザイン",
+          bcgClr: true,
+          linkbtn: true,
+        }}
       />
       <Card
         value={{
@@ -35,7 +40,7 @@ const index = () => {
           linkbtn: true,
         }}
       />
-      <Footer/>
+      <Footer />
     </>
   );
 };

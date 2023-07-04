@@ -11,7 +11,7 @@ import Modal from "./Modal";
 const GridImages = ({ title }) => {
   const { value, setValue, openModal, closeModal, isModalOpen } =
     useContext(ContextComponent);
-  const { title1, bcgClr, linkbtn } = title;
+  const { title1,title2, bcgClr, linkbtn } = title;
 
   // const shuffleArray = (sourceArr) => {
   //   for (let i = sourceArr.length - 1; i >= 0; i--) {
@@ -210,7 +210,7 @@ const GridImages = ({ title }) => {
             })}
           </div>
           <div className={styles.gridconteinter}>
-            {gridImagesA.slice(15, 21).map((item, index) => {
+            {gridImagesA.slice(15, 22).map((item, index) => {
               const { id, path, name, nameen, icon, bgc } = item;
               return (
                 <figure className={styles.figure} key={index}>
@@ -259,7 +259,7 @@ const GridImages = ({ title }) => {
   };
   return (
     <section className={`section-padding ${styles.gridimages}`}>
-      <Title title={{ title1 }} />
+      <Title title={{ title1,title2 }} />
       {gridImages(linkbtn)}
       {linkbtn && (
         <div className={styles.btnconteiner}>

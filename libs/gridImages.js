@@ -30,12 +30,11 @@ const gridImagesA = [
   },
   {
     id: 4,
-    path: "/amazoness_black.png",
-    pathred: "/amazoness_red.png",
-    name: "アマゾネス",
-    nameen: "illust-amazoness",
+    path: "/cyairoasahihaetori.png",
+    name: "チャイロアサヒハエトリ",
+    nameen: "cyairoasahihaetori.png",
     icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
-    bgc: "",
+    bgc: "#b9ebc88f",
     cover: false,
   },
 
@@ -194,6 +193,16 @@ const gridImagesA = [
     nameen: "magaillust-unryu",
     icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
     bgc: "#4f2750",
+    cover: false,
+  },
+  {
+    id: 22,
+    path: "/amazoness_black.png",
+    pathred: "/amazoness_red.png",
+    name: "アマゾネス",
+    nameen: "illust-amazoness",
+    icon: [{ src: "/affinity_designer_icon.png", name: "affinity-designer" }],
+    bgc: "",
     cover: false,
   },
 ];

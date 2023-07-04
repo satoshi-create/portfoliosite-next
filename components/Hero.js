@@ -41,7 +41,7 @@ const Hero = () => {
           <Button
             value={{
               title: "作品を見る",
-              path: "/sites",
+              path: "/graphics",
             }}
           />
         </div>

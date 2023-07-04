@@ -3,6 +3,6 @@ export const links = [
   { name: "about", path: "/about" },
   { name: "blog", path: "/blog" },
   { name: "sites", path: "/sites" },
-  { name: "grafhics", path: "/grafhics" },
+  { name: "graphics", path: "/graphics" },
 ];
 

@@ -259,7 +259,7 @@ const GridImages = ({ title }) => {
   };
   return (
     <section className={`section-padding ${styles.gridimages}`}>
-      <Title title={{ title1,title2 }} />
+      <Title title={{ title1, title2 }} />
       {gridImages(linkbtn)}
       {linkbtn && (
         <div className={styles.btnconteiner}>
@@ -267,7 +267,7 @@ const GridImages = ({ title }) => {
             value={{
               style: styles.grafhicbtn,
               title: "全てのグラフィックデザインを見る",
-              path: "/grafhics",
+              path: "/graphics",
             }}
           />
         </div>

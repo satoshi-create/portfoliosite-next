@@ -1,22 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 import styles from "../styles/Header.module.css";
 import { Menu } from "react-feather";
 import Link from "next/link";
 import Links from "./Links";
+import { links } from "../libs/links";
+import { ContextComponent } from "../libs/context";
+import Sidebar from "./Sidebar";
 
-const Header = ({ fixed}) => {
-  const [stickyClass, setStickyClass] = useState("");
+const Header = ({ fixed }) => {
+  const { openSidebar, stickyClass } = useContext(ContextComponent);
 
-  const stickNavbar = () => {
-    let windowHeight = window.scrollY;
-    windowHeight > 80 ? setStickyClass("header-fixed") : setStickyClass("");
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", stickNavbar);
-  }, []);
   return (
-    <header className={`parts-grid ${styles.header} ${fixed && styles[stickyClass]}`}>
+    <header
+      className={`parts-grid ${styles.header} ${fixed && styles[stickyClass]}`}
+    >
       <div className={styles.headerCenter}>
         <Link href="/">
           <a className={styles.titlebox}>
@@ -26,15 +23,22 @@ const Header = ({ fixed}) => {
         </Link>
         <nav className={styles.nav}>
           <div className={styles.navSp}>
-            <button className="btn">
+            <button className="btn" onClick={() => openSidebar()}>
               <Menu />
             </button>
           </div>
-          <Links
-            value={{
-              style: styles.headerNavPc,
-            }}
-          />
+          <Sidebar />
+          <ul className={`${styles.navPc}`}>
+            {links.map((link, index) => {
+              return (
+                <li key={index}>
+                  <Link href={link.path}>
+                    <a className={styles.navPcLink}>{link.name}</a>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </nav>
       </div>
     </header>

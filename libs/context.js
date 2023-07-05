@@ -11,6 +11,26 @@ export const ContextComponent = createContext();
 export const ContedtProvider = ({ children }) => {
   const [value, setValue] = useState();
   const [isModalOpen, setisModalOpen] = useState(false);
+  const [isSidebarOpen, setisSidebarOpen] = useState(false);
+  const [stickyClass, setStickyClass] = useState("");
+
+  const openSidebar = () => {
+    setisSidebarOpen(true);
+    document.querySelector("html").classList.add("open");
+  };
+  const closeSidebar = () => {
+    setisSidebarOpen(false);
+    document.querySelector("html").classList.remove("open");
+  };
+
+  const stickNavbar = () => {
+    let windowHeight = window.scrollY;
+    windowHeight > 80 ? setStickyClass("header-fixed") : setStickyClass("");
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", stickNavbar);
+  }, []);
 
   const openModal = (id) => {
     setisModalOpen(true);
@@ -37,6 +57,10 @@ export const ContedtProvider = ({ children }) => {
         openModal,
         closeModal,
         isModalOpen,
+        stickyClass,
+        openSidebar,
+        closeSidebar,
+        isSidebarOpen,
       }}
     >
       {children}

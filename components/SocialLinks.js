@@ -14,7 +14,7 @@ const SocialLinks = ({ value }) => {
         return (
           <li key={index}>
             <Link href={path}>
-              <a className={styles.icon}>{icon}test</a>
+              <a className={styles.icon}>{icon}</a>
             </Link>
           </li>
         );

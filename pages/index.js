@@ -15,7 +15,7 @@ const index = () => {
       <Head />
       <Header fixed={true} />
       <Hero />
-      <About title={{ title1: "ご紹介", bcgClr: true, btn: true }} />
+      <About title={{ title1: "自己紹介", bcgClr: true, btn: true }} />
       <Card
         value={{
           sites: demos,

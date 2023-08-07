@@ -15,6 +15,7 @@ const SocialLinks = ({ value }) => {
           <li key={index}>
             <Link href={path}>
               <a className={styles.icon}>{icon}test</a>
+              <a className={styles.icon}>{icon}test2</a>
             </Link>
           </li>
         );

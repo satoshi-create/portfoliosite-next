@@ -21,9 +21,10 @@ const Modal = () => {
 
   const modalData = ImagesData.find((data) => data.name === value);
 
-  console.log(modalData);
+  const modalDataObj = Object.fromEntries(modalData);
+  console.log(modalDataObj);
 
-  const { name, path, pathred, nameen, bgc, cover } = modalData;
+  const { name, path, pathred, nameen, bgc, cover } = modalDataObj;
 
   return (
     <aside className={styles.modal}>

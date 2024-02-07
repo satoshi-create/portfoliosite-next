@@ -209,7 +209,7 @@ const GridImages = ({ props }) => {
             })}
         </div>
         <div className={styles.gridconteinter}>
-          {filterdImages(cat, ImagesData)
+          {filterdImages(cat)
             .slice(15, 22)
             .map((item, index) => {
               const { id, path, name, nameen, icon, bgc } = item;

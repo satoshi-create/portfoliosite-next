@@ -14,14 +14,31 @@ const GridImages = ({ props }) => {
   const { value, setValue, openModal, closeModal, isModalOpen } =
     useContext(ContextComponent);
 
+ 
   const ImagesData = parseJSONdata(ImagesDataJSON);
+
+  console.log(ImagesData);
+
+  const Images = (imageCat) => {
+    if (imageCat == "grafhic") {
+      const filterdGraphicsDesignImages = ImagesData.filter(
+        (data) => data.cat === "2d"
+      );
+      return filterdGraphicsDesignImages;
+    } else {
+      const filterdThreeDesignImages = ImagesData.filter(
+        (data) => data.cat === "3d"
+      );
+      return filterdThreeDesignImages;
+    }
+  };
 
   console.log(cat);
 
   if (linkbtn) {
     return (
       <div className={styles.gridconteinter}>
-        {filterdImages(cat, ImagesData)
+        {Images(cat)
           .slice(0, 5)
           .map((item, index) => {
             const { id, path, name, nameen, icon, bgc } = item;
@@ -71,7 +88,7 @@ const GridImages = ({ props }) => {
     return (
       <>
         <div className={styles.gridconteinter}>
-          {filterdImages(cat, ImagesData)
+          {Images(cat)
             .slice(0, 5)
             .map((item, index) => {
               const { id, path, name, nameen, icon, bgc } = item;
@@ -117,7 +134,7 @@ const GridImages = ({ props }) => {
             })}
         </div>
         <div className={styles.gridconteinterB}>
-          {filterdImages(cat, ImagesData)
+          {Images(cat)
             .slice(5, 10)
             .map((item, index) => {
               const { id, path, name, nameen, icon, bgc } = item;
@@ -163,7 +180,7 @@ const GridImages = ({ props }) => {
             })}
         </div>
         <div className={styles.gridconteinterB}>
-          {filterdImages(cat, ImagesData)
+          {Images(cat)
             .slice(10, 15)
             .map((item, index) => {
               const { id, path, name, nameen, icon, bgc } = item;
@@ -209,7 +226,7 @@ const GridImages = ({ props }) => {
             })}
         </div>
         <div className={styles.gridconteinter}>
-          {filterdImages(cat, ImagesData)
+          {Images(cat)
             .slice(15, 22)
             .map((item, index) => {
               const { id, path, name, nameen, icon, bgc } = item;

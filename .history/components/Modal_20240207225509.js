@@ -1,17 +1,18 @@
 import React, { useContext, useEffect, useState } from "react";
 import styles from "../styles/Modal.module.css";
 import { ContextComponent } from "../libs/context";
-import ImagesDataJSON from "../libs/images-data.json";
+import { ImagesDataJSON } from "../libs/images-data.json";
 import { graphicsDesignImages } from "../libs/graphicsDesignImages";
 import Image from "next/image";
 import { ToggleLeft, ToggleRight } from "react-feather";
 import { parseJSONdata } from "../func/func";
 
 const Modal = () => {
-  const { value, closeModal } = useContext(ContextComponent);
+  const { value, setValue, closeModal } = useContext(ContextComponent);
   console.log(value);
 
   const [toggleBtn, setToggleBtn] = useState(true);
+  console.log(toggleBtn);
 
   useEffect(() => {
     setToggleBtn(true);
@@ -19,13 +20,10 @@ const Modal = () => {
 
   const ImagesData = parseJSONdata(ImagesDataJSON);
 
-  const modalData = ImagesData.filter((data) => data.name === value);
+  console.log(ImagesData);
 
-  console.log(modalData);
-
-  let modalDataObj = Object.assign({}, modalData);
-
-  const { name, path, pathred, nameen, bgc, cover } = modalDataObj;
+  const { name, path, pathred, nameen, bgc, cover } =
+    graphicsDesignImages[value - 1];
 
   return (
     <aside className={styles.modal}>

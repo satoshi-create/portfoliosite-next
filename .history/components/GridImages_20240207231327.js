@@ -53,7 +53,7 @@ const GridImages = ({ props }) => {
                   </figure> */}
                   <figure
                     className={styles.zoomiconfigure}
-                    onClick={() => openModal(name)}
+                    onClick={() => openModal(id)}
                   >
                     <ZoomIn className={styles.zoomicon} />
                   </figure>

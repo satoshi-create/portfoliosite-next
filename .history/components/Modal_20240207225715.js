@@ -8,24 +8,22 @@ import { ToggleLeft, ToggleRight } from "react-feather";
 import { parseJSONdata } from "../func/func";
 
 const Modal = () => {
-  const { value, closeModal } = useContext(ContextComponent);
+  const { value, setValue, closeModal } = useContext(ContextComponent);
   console.log(value);
 
   const [toggleBtn, setToggleBtn] = useState(true);
+  console.log(toggleBtn);
 
   useEffect(() => {
     setToggleBtn(true);
   }, []);
 
-  const ImagesData = parseJSONdata(ImagesDataJSON);
+  // const ImagesData = parseJSONdata(ImagesDataJSON);
 
-  const modalData = ImagesData.filter((data) => data.name === value);
+  console.log(ImagesDataJSON);
 
-  console.log(modalData);
-
-  let modalDataObj = Object.assign({}, modalData);
-
-  const { name, path, pathred, nameen, bgc, cover } = modalDataObj;
+  const { name, path, pathred, nameen, bgc, cover } =
+    graphicsDesignImages[value - 1];
 
   return (
     <aside className={styles.modal}>

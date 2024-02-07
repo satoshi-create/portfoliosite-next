@@ -23,9 +23,9 @@ const Modal = () => {
 
   console.log(modalData);
 
-  let modalDataObj = Object.assign({}, modalData);
+  let obj = Object.assign({}, arr);
 
-  const { name, path, pathred, nameen, bgc, cover } = modalDataObj;
+  const { name, path, pathred, nameen, bgc, cover } = modalData;
 
   return (
     <aside className={styles.modal}>

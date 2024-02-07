@@ -19,13 +19,11 @@ const Modal = () => {
 
   const ImagesData = parseJSONdata(ImagesDataJSON);
 
-  const modalData = ImagesData.filter((data) => data.name === value);
+  const modalData = ImagesData.filter((data) => data.name == name);
 
-  console.log(modalData);
+  log
 
-  let modalDataObj = Object.assign({}, modalData);
-
-  const { name, path, pathred, nameen, bgc, cover } = modalDataObj;
+  const { name, path, pathred, nameen, bgc, cover } = modalData;
 
   return (
     <aside className={styles.modal}>

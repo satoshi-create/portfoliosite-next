@@ -1,0 +1,20 @@
+id,path,name,nameen,iconsrc,bgc,cover,tool,cat
+1,/yorunoume.png,夜の梅,illust-yorunoume,/affinity_designer_icon.png,,FALSE,affinity designer,2d
+2,/michioshie.png,ミチオシエ,illust-michioshie,/affinity_designer_icon.png,#6e0b0b,FALSE,affinity designer,3d
+3,/kusakagerou.png,クサカゲロウ,illust-kusakagerou,/affinity_designer_icon.png,rgb(255 215 215),FALSE,affinity designer,3d
+4,/cyairoasahihaetori.png,チャイロアサヒハエトリ,cyairoasahihaetori.png,/affinity_designer_icon.png,#b9ebc88f,FALSE,affinity designer,3d
+5,/sensuwomotsuonna.png,扇子を持つ女,illust-sensuwomotsuonne,/affinity_designer_icon.png,#9b1dab,FALSE,affinity designer,2d
+6,/tomoshibi.png,街灯,illust-machiakari,/affinity_designer_icon.png,,FALSE,affinity designer,2d
+7,/kisyu_black.png,騎手,illust-kishu,/affinity_designer_icon.png,,FALSE,affinity designer,2d
+8,/haniwa_inu.png,犬,illust-dog,/affinity_designer_icon.png,#e1e1e1,FALSE,affinity designer,2d
+9,/war_black.png,重装歩兵,illust-zyusouhohei,/affinity_designer_icon.png,#6e0b0b,FALSE,affinity designer,2d
+10,/touhukozou_small.png,豆腐小僧A,illust-toufukozouA,/affinity_designer_icon.png,#fab4b4,TRUE,affinity designer,3d
+11,/beroudwofukuonna.png,ビロードを吹く女,illust-brwoudwofukuonna,/affinity_designer_icon.png,#7a5dae,TRUE,affinity designer,2d
+12,/kamikiri.png,かみきり,illust-kamikiri,/affinity_designer_icon.png,rgb(118 65 65),FALSE,affinity designer,2d
+13,/ichikawayaoza_toyokuni.png,市川八百蔵,illust-ichikawayoozou,/affinity_designer_icon.png,#52535b,FALSE,affinity designer,2d
+14,/hitotsumekozou.png,一つ目小僧,illust-hitotsumekozou,/affinity_designer_icon.png,#6fac91,TRUE,affinity designer,3d
+15,/toufukozou_middle.png,豆腐小僧B,illust-toufukozouB,/affinity_designer_icon.png,#fab4b4,TRUE,affinity designer,3d
+16,/bijinga.png,三勝,illust-sansyo,/affinity_designer_icon.png,#bb3488,FALSE,affinity designer,2d
+17,/ogamieizaburo_toyokuni.png,尾上栄三郎,illust-ogamieizabrou,/affinity_designer_icon.png,#3c3c3c,FALSE,affinity designer,2d
+18,/unryuu.png,雲龍,magaillust-unryu,/affinity_designer_icon.png,#4f2750,FALSE,affinity designer,2d
+19,/amazoness_black.png,アマゾネス,illust-amazoness,/affinity_designer_icon.png,,FALSE,affinity designer,2d

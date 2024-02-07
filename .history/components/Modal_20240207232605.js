@@ -18,7 +18,7 @@ const Modal = () => {
   }, []);
 
   const ImagesData = parseJSONdata(ImagesDataJSON);
-  
+
   const modalData = ImagesData.find((data) => data.name === value);
 
   const { name, path, pathred, nameen, bgc, cover } = modalData;

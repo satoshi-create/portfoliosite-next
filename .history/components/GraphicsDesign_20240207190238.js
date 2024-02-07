@@ -21,9 +21,9 @@ const GraphicsDesign = ({ title }) => {
   // const newGridImagesA = shuffleArray(gridImagesA);
 
   return (
-    <section className={`parts-grid section-padding ${styles.gridimages}`}>
+    <section className={`parts-grid section-padding`}>
       <Title title={{ title1, title2, fontClr }} />
-      {GridImages(linkbtn)}
+      {/* {GridImages(linkbtn)} */}
       {linkbtn && (
         <LinkedButton
           value={{

@@ -1,7 +1,8 @@
 export const links = [
   { name: "home", path: "/" },
   { name: "about", path: "/about" },
-  { name: "3D", path: "/threedDesign" },
-  { name: "graphics", path: "/graphicsDesign" },
+  // { name: "blog", path: "/blog" },
   { name: "sites", path: "/sites" },
+  { name: "graphics", path: "/graphicsDesign" },
 ];
+

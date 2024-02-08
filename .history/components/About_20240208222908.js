@@ -5,7 +5,7 @@ import Button from "./LinkedButton";
 import Image from "next/image";
 import { about } from "../libs/about";
 
-// TODO Skillコンポーネントを作成する
+TODO 
 const About = ({ title }) => {
   const { title1, bcgClr, btn } = title;
   console.log(bcgClr);

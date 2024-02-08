@@ -62,7 +62,6 @@
   {
     "id": "7",
     "path": "/kisyu_black.png",
-    "pathArr": ["/kisyu_black.png", "/kisyu_red.png"],
     "name": "騎手",
     "nameen": "illust-kishu",
     "iconsrc": "/affinity_designer_icon.png",
@@ -86,7 +85,7 @@
   {
     "id": "9",
     "path": "/war_black.png",
-    "pathArr": ["/war_black.png", "/war_red.png"],
+    "pathArr":["/war_black.png","/war_red.png"],
     "name": "重装歩兵",
     "nameen": "illust-zyusouhohei",
     "iconsrc": "/affinity_designer_icon.png",

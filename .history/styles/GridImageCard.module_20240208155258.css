@@ -47,16 +47,13 @@
 .name {
   font-family: var(--sub-font);
   color: var(--white);
-  font-size: clamp(1rem, 0.7615rem + 1.0178vw, 1.25rem);
+  font-size: clamp(1.4rem, 1.0533rem + 1.4792vw, 2rem);
 }
 
 .image {
   width: 100%;
   transition: var(--transition);
   border-radius: 20px;
-}
-.figure:hover {
-  cursor: pointer;
 }
 .figure:hover .image,
 .figureB:hover .image,
@@ -67,8 +64,11 @@
 .figureB:hover .info,
 .figureC:hover .info {
   opacity: 1;
+  cursor: pointer;
 }
-
+.figure:hover .zoomicon{
+  
+}
 .figure:hover::after,
 .figureB:hover::after,
 .figureC:hover::after {
@@ -109,11 +109,9 @@
   color: var(--white);
   transition: var(--transition);
 }
-.figure:hover .zoomicon {
+.zoomicon:hover {
   color: var(--accent-clr-01);
-  transform: scale(1.3);
 }
-
 @media screen and (min-width: 768px) {
   /* gridconteinterA,.gridconteinterC */
   .figure:nth-child(1) {

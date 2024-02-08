@@ -26,7 +26,7 @@ const GridImageCard = ({ props, sliceNum }) => {
       {filterdImages(cat, ImagesData)
         .slice(a, b)
         .map((item, index) => {
-          const { id, path, name, nameen, iconsrc, bgc } = item;
+          const { id, path, name, nameen, icon, bgc } = item;
           return (
             <figure className={styles.figure} key={index}>
               <Image
@@ -42,26 +42,19 @@ const GridImageCard = ({ props, sliceNum }) => {
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmF/vAwADMQFs4YXxygAAAABJRU5ErkJggg=="
               />
-              <div className={styles.info} onClick={() => openModal(name)}>
+              <div className={styles.info}>
                 <p className={styles.name}>{name}</p>
                 <figure className={styles.tooliconfigure}>
-                  <img
-                    src={item.iconsrc}
-                    alt={item.iconsrc}
-                    className={styles.iconsrcimage}
-                  />
-                  {/* {icon.map((item, i) => {
+                {icon.map((item, i) => {
                   return (
-                    <img
-                      src={item.src}
-                      alt={item.name}
-                      className={styles.tool}
-                      key={i}
-                    />
+                 
                   );
-                })} */}
-                </figure>
-                <figure className={styles.zoomiconfigure}>
+                })}
+              </figure>
+                <figure
+                  className={styles.zoomiconfigure}
+                  onClick={() => openModal(name)}
+                >
                   <ZoomIn className={styles.zoomicon} />
                 </figure>
               </div>

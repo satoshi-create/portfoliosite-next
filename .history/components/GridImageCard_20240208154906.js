@@ -42,14 +42,16 @@ const GridImageCard = ({ props, sliceNum }) => {
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmF/vAwADMQFs4YXxygAAAABJRU5ErkJggg=="
               />
-              <div className={styles.info} onClick={() => openModal(name)}>
+              <div className={styles.info}>
                 <p className={styles.name}>{name}</p>
                 <figure className={styles.tooliconfigure}>
                   <img
                     src={item.iconsrc}
                     alt={item.iconsrc}
-                    className={styles.iconsrcimage}
+                    className={styles.tool}
+                    key={i}
                   />
+
                   {/* {icon.map((item, i) => {
                   return (
                     <img
@@ -61,7 +63,10 @@ const GridImageCard = ({ props, sliceNum }) => {
                   );
                 })} */}
                 </figure>
-                <figure className={styles.zoomiconfigure}>
+                <figure
+                  className={styles.zoomiconfigure}
+                  onClick={() => openModal(name)}
+                >
                   <ZoomIn className={styles.zoomicon} />
                 </figure>
               </div>

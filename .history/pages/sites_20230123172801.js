@@ -4,7 +4,7 @@ import About from "../components/About";
 import Card from "../components/Card";
 import { projects, demos } from "../libs/sites";
 import Head from "../components/Meta";
-import Grapics from "../components/GridImageList";
+import Grapics from "../components/GridImages";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Header from "../components/Header";
 import Footer from "../components/Footer";

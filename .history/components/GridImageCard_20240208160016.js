@@ -42,7 +42,7 @@ const GridImageCard = ({ props, sliceNum }) => {
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmF/vAwADMQFs4YXxygAAAABJRU5ErkJggg=="
               />
-              <div className={styles.info} onClick={() => openModal(name)}>
+              <div className={styles.info}>
                 <p className={styles.name}>{name}</p>
                 <figure className={styles.tooliconfigure}>
                   <img

@@ -47,7 +47,7 @@
 .name {
   font-family: var(--sub-font);
   color: var(--white);
-  font-size: clamp(1rem, 0.7615rem + 1.0178vw, 1.25rem);
+  font-size: clamp(1.4rem, 1.0533rem + 1.4792vw, 2rem);
 }
 
 .image {

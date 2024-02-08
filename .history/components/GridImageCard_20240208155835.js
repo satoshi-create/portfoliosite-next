@@ -28,7 +28,11 @@ const GridImageCard = ({ props, sliceNum }) => {
         .map((item, index) => {
           const { id, path, name, nameen, iconsrc, bgc } = item;
           return (
-            <figure className={styles.figure} key={index}>
+            <figure
+              className={styles.figure}
+              key={index}
+              onClick={() => openModal(name)}
+            >
               <Image
                 src={path}
                 layout="fill"
@@ -42,7 +46,7 @@ const GridImageCard = ({ props, sliceNum }) => {
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkmF/vAwADMQFs4YXxygAAAABJRU5ErkJggg=="
               />
-              <div className={styles.info} onClick={() => openModal(name)}>
+              <div className={styles.info}>
                 <p className={styles.name}>{name}</p>
                 <figure className={styles.tooliconfigure}>
                   <img

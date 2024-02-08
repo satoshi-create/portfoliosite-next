@@ -1,0 +1,37 @@
+.navPc {
+  display: none;
+}
+.header {
+  color: red;
+}
+@media screen and (min-width: 768px) {
+  /* .navPc {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    font-family: var(--text-font);
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+  .navPcLink {
+    transition: var(--transition);
+  }
+  .navPcLink:hover {
+    color: var(--primary-green-02);
+  } */
+  .navPc {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    font-family: var(--text-font);
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: clamp(1.25rem, 0.5833rem + 1.3889vw, 1.625rem);
+  }
+  .navPcLink {
+    transition: var(--transition);
+  }
+  .navPcLink:hover {
+    color: var(--primary-green-02);
+  }
+}

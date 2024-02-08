@@ -76,18 +76,18 @@
     "tool": "affinity designer",
     "cat": "3d"
   },
-
   {
-    "id": "9",
-    "path": "/war_black.png",
-    "name": "重装歩兵",
-    "nameen": "illust-zyusouhohei",
+    "id": "8",
+    "path": "/haniwa_inu.png",
+    "name": "犬",
+    "nameen": "illust-dog",
     "iconsrc": "/affinity_designer_icon.png",
-    "bgc": "#6e0b0b",
+    "bgc": "#e1e1e1",
     "cover": "FALSE",
     "tool": "affinity designer",
     "cat": "2d"
   },
+
   {
     "id": "10",
     "path": "/touhukozou_small.png",

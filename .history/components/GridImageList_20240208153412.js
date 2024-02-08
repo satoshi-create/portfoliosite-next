@@ -17,7 +17,7 @@ const GridImageList = ({ props }) => {
           <GridImageCard props={props} sliceNum={{ a: 0, b: 5 }} />
         </div>
         <div className={styles.gridconteinter}>
-          <GridImageCard props={props} sliceNum={{ a: 6, b: 11 }} />
+          <GridImageCard props={props} sliceNum={{ a: 6, b: 5 }} />
         </div>
       </>
     );

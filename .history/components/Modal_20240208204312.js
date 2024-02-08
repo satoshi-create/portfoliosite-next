@@ -17,7 +17,6 @@ const Modal = () => {
   const { name, path, pathArr, nameen, bgc, cover } = modalData;
 
   const [thumbIndex, setThumbIndex] = useState(0);
-  console.log(thumbIndex);
 
   const nextSlide = () => {
     setThumbIndex((oldIndex) => {
@@ -51,7 +50,7 @@ const Modal = () => {
             src={pathArr ? pathArr[thumbIndex] : path}
             layout="fill"
             // TODO next/image cover or contain ??
-            objectFit="contain"
+            objectFit={cover === t ? "cover" : "contain"}
             className={styles.image}
             style={{ backgroundColor: bgc ? bgc : "white" }}
             alt={nameen}
@@ -61,28 +60,26 @@ const Modal = () => {
           />
         </figure>
         {pathArr && (
-          <>
-            <div className={styles.thumb}>
-              {pathArr.map((item, index) => {
-                return (
-                  <figure
-                    key={index}
-                    onClick={() => setThumbIndex(index)}
-                    className={`${index === thumbIndex && styles.thumbFigure}`}
-                  >
-                    <img src={item} alt={item} className={styles.thumbImg} />
-                  </figure>
-                );
-              })}
-            </div>
-            <button className={styles.prev} onClick={prevSlide}>
-              <ArrowLeft />
-            </button>
-            <button className={styles.next} onClick={nextSlide}>
-              <ArrowRight />
-            </button>
-          </>
+          <div className={styles.thumb}>
+            {pathArr.map((item, index) => {
+              return (
+                <figure
+                  key={index}
+                  onClick={() => setThumbIndex(index)}
+                  className={`${index === thumbIndex && styles.thumbFigure}`}
+                >
+                  <img src={item} alt={item} className={styles.thumbImg} />
+                </figure>
+              );
+            })}
+          </div>
         )}
+        <button className={styles.prev} onClick={prevSlide}>
+          <ArrowLeft />
+        </button>
+        <button className={styles.next} onClick={nextSlide}>
+          <ArrowRight />
+        </button>
       </div>
     </aside>
   );

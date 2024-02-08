@@ -43,7 +43,7 @@
     "name": "チャイロアサヒハエトリ",
     "nameen": "cyairoasahihaetori.png",
     "iconsrc": "/affinity_designer_icon.png",
-    "bgc": "#b9ebc88f",
+    "bgc": "var(---grey-01)",
     "cover": "FALSE",
     "tool": "affinity designer",
     "cat": "3d"

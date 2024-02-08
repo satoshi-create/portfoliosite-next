@@ -17,7 +17,8 @@ const Modal = () => {
   const { name, path, pathArr, nameen, bgc, cover } = modalData;
 
   const [thumbIndex, setThumbIndex] = useState(0);
-  console.log(thumbIndex);
+  console.log('');
+  
 
   const nextSlide = () => {
     setThumbIndex((oldIndex) => {

@@ -31,7 +31,7 @@ export const filterdImages = (imageCat, data) => {
       break;
     case "cad":
       const filterdCadDesignImages = data.filter((data) => data.cat === "cad");
-      return filterdCadDesignImages;
+      return filterdThreeDesignImages;
       break;
   }
 };

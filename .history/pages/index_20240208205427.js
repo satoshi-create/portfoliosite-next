@@ -8,7 +8,7 @@ import GraphicsDesign from "../components/GraphicsDesign";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ThreedDesign from "../components/threedDesign";
-import CadDesign from "../components/CadDesign";
+import cCadDesignadDesign from "../components/CadDesign";
 
 const index = () => {
   return (

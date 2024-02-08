@@ -8,7 +8,6 @@ import GraphicsDesign from "../components/GraphicsDesign";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ThreedDesign from "../components/threedDesign";
-import CadDesign from "../components/CadDesign";
 
 const index = () => {
   return (
@@ -17,14 +16,6 @@ const index = () => {
       <Header fixed={true} />
       <Hero />
       <About title={{ title1: "自己紹介", bcgClr: true, btn: true }} />
-      <CadDesign
-        title={{
-          title1: "CAD",
-          title2: "デザイン",
-          fontClr: "var(--primary-green-01)",
-          linkbtn: true,
-        }}
-      />
       <ThreedDesign
         title={{
           title1: "3D",
@@ -41,7 +32,7 @@ const index = () => {
           linkbtn: true,
         }}
       />
-      {/* TODO chage site color */}
+{/* TODO chage site color */}
       <Card
         value={{
           sites: demos,

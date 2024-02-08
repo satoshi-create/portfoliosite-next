@@ -8,7 +8,7 @@ import GraphicsDesign from "../components/GraphicsDesign";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ThreedDesign from "../components/threedDesign";
-import CadDesign from "../components/CadDesign";
+import cadDesign from "../components/CadDesign";
 
 const index = () => {
   return (
@@ -17,7 +17,7 @@ const index = () => {
       <Header fixed={true} />
       <Hero />
       <About title={{ title1: "自己紹介", bcgClr: true, btn: true }} />
-      <CadDesign
+      <cadDesign
         title={{
           title1: "CAD",
           title2: "デザイン",

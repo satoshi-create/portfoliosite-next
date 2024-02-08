@@ -35,11 +35,6 @@
   {
     "id": "4",
     "path": "/cyairoasahihaetori.png",
-    "pathArr": [
-      "/cyairoasahihaetori.png",
-      "/cyairoasahihaetori_var1.png",
-      "/cyairoasahihaetori_var2.png"
-    ],
     "name": "チャイロアサヒハエトリ",
     "nameen": "cyairoasahihaetori.png",
     "iconsrc": "/affinity_designer_icon.png",
@@ -201,10 +196,10 @@
   {
     "id": "19",
     "path": "/box.jpg",
-    "name": "box",
-    "nameen": "box",
+    "name": "",
+    "nameen": "",
     "iconsrc": "/fusion360.svg",
-    "bgc": "",
+    "bgc": "#4f2750",
     "cover": "FALSE",
     "tool": "fusion360",
     "cat": "cad"
@@ -212,45 +207,45 @@
   {
     "id": "20",
     "path": "/house.jpg",
-    "name": "house",
+    "name": "",
     "nameen": "",
-    "iconsrc": "/fusion360.svg",
-    "bgc": "",
+    "iconsrc": "/fusion360.png",
+    "bgc": "#4f2750",
     "cover": "FALSE",
     "tool": "fusion360",
     "cat": "cad"
   },
   {
     "id": "21",
-    "path": "/chair.jpg",
-    "name": "chair",
-    "nameen": "chair",
-    "iconsrc": "/blender.png",
-    "bgc": "",
+    "path": "/bochair.jpg",
+    "name": "",
+    "nameen": "",
+    "iconsrc": "/fusion360.png",
+    "bgc": "#4f2750",
     "cover": "FALSE",
-    "tool": "blender",
+    "tool": "fusion360",
     "cat": "cad"
   },
   {
-    "id": "22",
-    "path": "/car.jpg",
-    "name": "car",
-    "nameen": "car",
+    "id": "19",
+    "path": "/box.jpg",
+    "name": "",
+    "nameen": "",
     "iconsrc": "/blender.png",
-    "bgc": "",
+    "bgc": "#4f2750",
     "cover": "FALSE",
-    "tool": "blender",
+    "tool": "fusion360",
     "cat": "cad"
   },
   {
-    "id": "23",
-    "path": "/coffeehouse.jpg",
-    "name": "coffeehouse",
-    "nameen": "coffeehouse",
-    "iconsrc": "/blender.png",
-    "bgc": "",
+    "id": "19",
+    "path": "/box.jpg",
+    "name": "",
+    "nameen": "",
+    "iconsrc": "/fusion360.png",
+    "bgc": "#4f2750",
     "cover": "FALSE",
-    "tool": "blender",
+    "tool": "fusion360",
     "cat": "cad"
   }
 ]

@@ -35,11 +35,7 @@
   {
     "id": "4",
     "path": "/cyairoasahihaetori.png",
-    "pathArr": [
-      "/cyairoasahihaetori.png",
-      "/cyairoasahihaetori_var1.png",
-      "/cyairoasahihaetori_var2.png"
-    ],
+    "pathArr":[],
     "name": "チャイロアサヒハエトリ",
     "nameen": "cyairoasahihaetori.png",
     "iconsrc": "/affinity_designer_icon.png",

@@ -35,10 +35,8 @@
   {
     "id": "4",
     "path": "/cyairoasahihaetori.png",
-    "pathArr": [
-      "/cyairoasahihaetori.png",
-      "/cyairoasahihaetori_var1.png",
-      "/cyairoasahihaetori_var2.png"
+    "pathArr":[
+      "cyairoasahihaetori.png"
     ],
     "name": "チャイロアサヒハエトリ",
     "nameen": "cyairoasahihaetori.png",

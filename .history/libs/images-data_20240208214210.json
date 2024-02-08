@@ -35,11 +35,6 @@
   {
     "id": "4",
     "path": "/cyairoasahihaetori.png",
-    "pathArr": [
-      "/cyairoasahihaetori.png",
-      "/cyairoasahihaetori_var1.png",
-      "/cyairoasahihaetori_var2.png"
-    ],
     "name": "チャイロアサヒハエトリ",
     "nameen": "cyairoasahihaetori.png",
     "iconsrc": "/affinity_designer_icon.png",
@@ -202,9 +197,9 @@
     "id": "19",
     "path": "/box.jpg",
     "name": "box",
-    "nameen": "box",
+    "nameen": "",
     "iconsrc": "/fusion360.svg",
-    "bgc": "",
+    "bgc": "#4f2750",
     "cover": "FALSE",
     "tool": "fusion360",
     "cat": "cad"
@@ -215,7 +210,7 @@
     "name": "house",
     "nameen": "",
     "iconsrc": "/fusion360.svg",
-    "bgc": "",
+    "bgc": "#4f2750",
     "cover": "FALSE",
     "tool": "fusion360",
     "cat": "cad"
@@ -226,7 +221,7 @@
     "name": "chair",
     "nameen": "chair",
     "iconsrc": "/blender.png",
-    "bgc": "",
+    "bgc": "#4f2750",
     "cover": "FALSE",
     "tool": "blender",
     "cat": "cad"
@@ -237,7 +232,7 @@
     "name": "car",
     "nameen": "car",
     "iconsrc": "/blender.png",
-    "bgc": "",
+    "bgc": "#4f2750",
     "cover": "FALSE",
     "tool": "blender",
     "cat": "cad"
@@ -248,7 +243,7 @@
     "name": "coffeehouse",
     "nameen": "coffeehouse",
     "iconsrc": "/blender.png",
-    "bgc": "",
+    "bgc": "#4f2750",
     "cover": "FALSE",
     "tool": "blender",
     "cat": "cad"

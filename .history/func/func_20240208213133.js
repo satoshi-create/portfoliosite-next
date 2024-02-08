@@ -30,8 +30,8 @@ export const filterdImages = (imageCat, data) => {
       return filterdThreeDesignImages;
       break;
     case "cad":
-      const filterdCadDesignImages = data.filter((data) => data.cat === "cad");
-      return filterdCadDesignImages;
+        const filterdCadDesignImages = data.filter((data) => data.cat === "3d");
+      return filterdThreeDesignImages;
       break;
   }
 };

@@ -35,11 +35,6 @@
   {
     "id": "4",
     "path": "/cyairoasahihaetori.png",
-    "pathArr": [
-      "/cyairoasahihaetori.png",
-      "/cyairoasahihaetori_var1.png",
-      "/cyairoasahihaetori_var2.png"
-    ],
     "name": "チャイロアサヒハエトリ",
     "nameen": "cyairoasahihaetori.png",
     "iconsrc": "/affinity_designer_icon.png",
@@ -201,56 +196,12 @@
   {
     "id": "19",
     "path": "/box.jpg",
-    "name": "box",
-    "nameen": "box",
-    "iconsrc": "/fusion360.svg",
-    "bgc": "",
-    "cover": "FALSE",
-    "tool": "fusion360",
-    "cat": "cad"
-  },
-  {
-    "id": "20",
-    "path": "/house.jpg",
-    "name": "house",
+    "name": "",
     "nameen": "",
-    "iconsrc": "/fusion360.svg",
-    "bgc": "",
+    "iconsrc": "/fusion.png",
+    "bgc": "#4f2750",
     "cover": "FALSE",
-    "tool": "fusion360",
-    "cat": "cad"
-  },
-  {
-    "id": "21",
-    "path": "/chair.jpg",
-    "name": "chair",
-    "nameen": "chair",
-    "iconsrc": "/blender.png",
-    "bgc": "",
-    "cover": "FALSE",
-    "tool": "blender",
-    "cat": "cad"
-  },
-  {
-    "id": "22",
-    "path": "/car.jpg",
-    "name": "car",
-    "nameen": "car",
-    "iconsrc": "/blender.png",
-    "bgc": "",
-    "cover": "FALSE",
-    "tool": "blender",
-    "cat": "cad"
-  },
-  {
-    "id": "23",
-    "path": "/coffeehouse.jpg",
-    "name": "coffeehouse",
-    "nameen": "coffeehouse",
-    "iconsrc": "/blender.png",
-    "bgc": "",
-    "cover": "FALSE",
-    "tool": "blender",
-    "cat": "cad"
+    "tool": "affinity designer",
+    "cat": "2d"
   }
 ]

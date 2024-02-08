@@ -3,7 +3,7 @@ import styles from "../styles/Hero.module.css";
 import Button from "./LinkedButton";
 import SocialLinks from "./SocialLinks";
 import Image from "next/image";
-// TODO レスポンシブでレイアウトが崩れるので調整する
+// TODO sp、mdでレイアウトが崩れるので調整する
 const Hero = () => {
   return (
     <section className={`parts-grid  ${styles.herocontainer}`}>

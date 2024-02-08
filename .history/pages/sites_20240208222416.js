@@ -20,17 +20,7 @@ const sites = () => {
       <Head />
       <Header fixed={true} />
       <Breadcrumbs lists={lists} />
-      <Card
-        value={{
-          sites: demos,
-          title1: "デモ",
-          title2: "サイト",
-          fontClr: "var(--primary-blue-01)",
-          bcgClr: "var(--primary-blue-02)",
-          iconBcgClr: "var(--primary-blue-01)",
-          iconFontClr: "var(--primary-blue-02)",
-        }}
-      />
+      <Card value={{ sites: demos, title1: "デモ", title2: "サイト" }} />
       {/* TODO add card bcg color */}
       <Card
         value={{

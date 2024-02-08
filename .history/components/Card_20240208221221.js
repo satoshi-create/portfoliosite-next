@@ -7,16 +7,7 @@ import Image from "next/image";
 import LinkedButton from "./LinkedButton";
 
 const Card = ({ value }) => {
-  const {
-    sites,
-    title1,
-    title2,
-    fontClr,
-    bcgClr,
-    iconBcgClr,
-    iconFontClr,
-    linkbtn,
-  } = value;
+  const { sites, title1, title2, fontClr,bcg linkbtn } = value;
   return (
     <section
       className={`parts-grid section-padding`}
@@ -32,7 +23,7 @@ const Card = ({ value }) => {
           return (
             <li
               className={styles.card}
-              style={{ backgroundColor: bcgClr }}
+              style={{ backgroundColor: fontClr }}
               key={index}
             >
               <Link href={url}>
@@ -54,14 +45,7 @@ const Card = ({ value }) => {
                   <ul className={styles.tag}>
                     {tag.map((item, index) => {
                       return (
-                        <li
-                          className={styles.tagItem}
-                          style={{
-                            backgroundColor: iconBcgClr,
-                            color: iconFontClr,
-                          }}
-                          key={index}
-                        >
+                        <li className={styles.tagItem} key={index}>
                           {item}
                         </li>
                       );
@@ -70,13 +54,7 @@ const Card = ({ value }) => {
                   {githubUrl && (
                     <Link href={githubUrl}>
                       <a target="_blank">
-                        <GitHub
-                          className={styles.icon}
-                          style={{
-                            backgroundColor: iconBcgClr,
-                            color: iconFontClr,
-                          }}
-                        />
+                        <GitHub className={styles.icon} />
                       </a>
                     </Link>
                   )}

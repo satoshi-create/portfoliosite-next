@@ -13,7 +13,10 @@
   /* background-color: var(--primary-green-04); */
   border-radius: 10px;
 }
-
+.blue {
+  color: var(--primary-blue-02);
+  background-color: var(--primary-blue-02);
+}
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
   transform: scale(1.02);
@@ -36,7 +39,8 @@
 }
 .tagItem {
   text-transform: uppercase;
-
+  background-color: var(--primary-green-02);
+  color: var(--primary-green-01);
   font-family: var(--en-font);
   font-size: 11px;
   padding: 6px 10px;
@@ -44,11 +48,13 @@
   font-weight: 400;
 }
 .icon {
+  color: var(--primary-green-01);
   transition: var(--transition);
   border-radius: 0.2rem;
   padding: 0.1rem;
 }
 .icon:hover {
+  background-color: var(--primary-green-01);
   color: var(--white);
 }
 .btnconteiner {
@@ -63,7 +69,7 @@
   }
   .card {
     flex: 0 0 calc(50% - 2rem);
-  }
+  } 
 }
 @media screen and (min-width: 1024px) {
   .card {

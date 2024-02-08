@@ -49,8 +49,6 @@ const index = () => {
           title2: "サイト",
           fontClr: "var(--primary-blue-01)",
           bcgClr: "var(--primary-blue-02)",
-          iconBcgClr: "var(--primary-blue-01)",
-          iconFontClr: "var(--primary-blue-02)",
           linkbtn: true,
         }}
       />
@@ -61,8 +59,6 @@ const index = () => {
           title2: "サイト",
           fontClr: "var(--primary-blue-01)",
           bcgClr: "var(--primary-blue-02)",
-          iconBcgClr: "var(--primary-blue-01)",
-          iconFontClr: "var(--primary-blue-02)",
           linkbtn: true,
         }}
       />

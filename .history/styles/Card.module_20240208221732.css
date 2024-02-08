@@ -36,7 +36,8 @@
 }
 .tagItem {
   text-transform: uppercase;
-
+  background-color: var(--primary-green-02);
+  color: var(--primary-green-01);
   font-family: var(--en-font);
   font-size: 11px;
   padding: 6px 10px;
@@ -44,6 +45,7 @@
   font-weight: 400;
 }
 .icon {
+  color: var(--primary-green-01);
   transition: var(--transition);
   border-radius: 0.2rem;
   padding: 0.1rem;

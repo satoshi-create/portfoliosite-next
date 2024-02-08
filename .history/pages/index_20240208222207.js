@@ -60,7 +60,7 @@ const index = () => {
           title1: "プロジェクト",
           title2: "サイト",
           fontClr: "var(--primary-blue-01)",
-          bcgClr: "var(--primary-blue-02)",
+          bcgClr: "var(--primary-blue-04)",
           iconBcgClr: "var(--primary-blue-01)",
           iconFontClr: "var(--primary-blue-02)",
           linkbtn: true,

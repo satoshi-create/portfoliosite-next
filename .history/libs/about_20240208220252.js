@@ -5,6 +5,6 @@ export const about = [
   },
   {
     title: "スキル",
-    desc: "職業訓練校ではIllustrator、Photoshop、HTML、CSSを中心に学びました。その後、モダンコーディングスキルやフレームワークを学びました。現在は、主にBlender、Fusion360、AutoCADを学んでいます。",
+    desc: "職業訓練校ではIllustrator、Photoshop、HTML、CSSを中心に学びました。その後、モダンコーディングスキルやフレームワークを学びました。現在はBlender、Fusion360、AutoCAD,Affinity Designer、を学んでいます。",
   },
 ];

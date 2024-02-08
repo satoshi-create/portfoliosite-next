@@ -26,7 +26,7 @@ const GraphicsDesign = ({ title }) => {
     <section className={`parts-grid section-padding ${styles.gridimages}`}>
       <Title title={{ title1, title2, fontClr }} />
       {/* {GridImages(linkbtn)} */}
-      <GridImageList
+      <GridImages
         props={{
           linkbtn: linkbtn,
           cat: "grafhic",

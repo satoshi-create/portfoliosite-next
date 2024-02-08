@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "./Title";
-import styles from "../styles/GridImageList.module.css";
+import styles from "../styles/GridImages.module.css";
 import LinkedButton from "./LinkedButton";
 import GridImageList from "./GridImageList";
 
@@ -9,8 +9,8 @@ const threedDesign = ({ title }) => {
   return (
     <section className={`parts-grid section-padding ${styles.gridimages}`}>
       <Title title={{ title1, title2, fontClr }} />
-      <GridImageList
-        props={{
+      <GridImages
+      props= {{
           linkbtn: linkbtn,
           cat: "threed",
         }}

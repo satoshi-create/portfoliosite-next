@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "./Title";
-import styles from "../styles/GridImageList.module.css";
+import styles from "../styles/GridImages.module.css";
 import LinkedButton from "./LinkedButton";
 import GridImageList from "./GridImageList";
 

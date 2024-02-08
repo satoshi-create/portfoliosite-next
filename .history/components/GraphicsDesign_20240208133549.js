@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Title from "./Title";
 import styles from "../styles/GraphicDesign.module.css";
 import LinkedButton from "./LinkedButton";
-import GridImageList from "./GridImageList";
+import GridImages from "./GridImageList";
 
 
 
@@ -26,7 +26,7 @@ const GraphicsDesign = ({ title }) => {
     <section className={`parts-grid section-padding ${styles.gridimages}`}>
       <Title title={{ title1, title2, fontClr }} />
       {/* {GridImages(linkbtn)} */}
-      <GridImageList
+      <GridImages
         props={{
           linkbtn: linkbtn,
           cat: "grafhic",

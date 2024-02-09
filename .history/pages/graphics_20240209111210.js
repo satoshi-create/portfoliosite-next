@@ -5,7 +5,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CadDesign from "../components/CadDesign";
-import ThreedDesign from "../components/threedDesign";
+import Threed
 
 const lists = [
   { name: "top", path: "/" },
@@ -20,26 +20,20 @@ const grafhics = () => {
       <Breadcrumbs lists={lists} />
       <CadDesign
         title={{
-          title1: "CAD",
-          title2: "デザイン",
+          title1: "CADデザイン",
           linkbtn: false,
-          fontClr: "var(--primary-green-01)",
         }}
       />
       <ThreedDesign
         title={{
-          title1: "3D",
-          title2: "デザイン",
+          title1: "3Dデザイン",
           linkbtn: false,
-          fontClr: "var(--primary-green-01)",
         }}
       />
       <GraphicsDesign
         title={{
-          title1: "グラフィック",
-          title2: "デザイン",
+          title1: "グラフィックデザイン",
           linkbtn: false,
-          fontClr: "var(--primary-green-01)",
         }}
       />
       <Footer />

@@ -95,17 +95,17 @@
     "tool": "affinity designer",
     "cat": "2d"
   },
-  {
-    "id": "10",
-    "path": "/touhukozou_small.png",
-    "name": "豆腐小僧A",
-    "nameen": "illust-toufukozouA",
-    "iconsrc": "/affinity_designer_icon.png",
-    "bgc": "#fab4b4",
-    "cover": "TRUE",
-    "tool": "affinity designer",
-    "cat": "3d"
-  },
+  // {
+  //   "id": "10",
+  //   "path": "/touhukozou_small.png",
+  //   "name": "豆腐小僧A",
+  //   "nameen": "illust-toufukozouA",
+  //   "iconsrc": "/affinity_designer_icon.png",
+  //   "bgc": "#fab4b4",
+  //   "cover": "TRUE",
+  //   "tool": "affinity designer",
+  //   "cat": "3d"
+  // },
   {
     "id": "11",
     "path": "/beroudwofukuonna.png",
@@ -138,6 +138,17 @@
     "cover": "FALSE",
     "tool": "affinity designer",
     "cat": "2d"
+  },
+  {
+    "id": "14",
+    "path": "/hitotsumekozou.png",
+    "name": "一つ目小僧",
+    "nameen": "illust-hitotsumekozou",
+    "iconsrc": "/affinity_designer_icon.png",
+    "bgc": "#6fac91",
+    "cover": "TRUE",
+    "tool": "affinity designer",
+    "cat": "3d"
   },
   {
     "id": "15",

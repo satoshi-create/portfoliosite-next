@@ -28,7 +28,7 @@ const grafhics = () => {
       />
       <ThreedDesign
         title={{
-          title1: "3D",
+          title1: "3Dデザイン",
           title2: "デザイン",
           linkbtn: false,
           fontClr: "var(--primary-green-01)",
@@ -36,8 +36,7 @@ const grafhics = () => {
       />
       <GraphicsDesign
         title={{
-          title1: "グラフィック",
-          title2: "デザイン",
+          title1: "グラフィックデザイン",
           linkbtn: false,
           fontClr: "var(--primary-green-01)",
         }}

@@ -6,9 +6,8 @@ import ImagesDataJSON from "../libs/images-data.json";
 
 const GridImageList = ({ props }) => {
   const { linkbtn, cat } = props;
-  const ImagesData = parseJSONdata(ImagesDataJSON);
-  const filterdImagesData = filterdImages(cat, ImagesData);
-  console.log(filterdImagesData.length);
+  const filterdImagesData = parseJSONdata(ImagesDataJSON);
+  console.log(filterdImagesData);
 
   if (linkbtn) {
     return (
@@ -22,11 +21,9 @@ const GridImageList = ({ props }) => {
         <div className={styles.gridconteinter}>
           <GridImageCard props={props} sliceNum={{ a: 0, b: 5 }} />
         </div>
-        {filterdImagesData.length > 5 && (
-          <div className={styles.gridconteinter}>
-            <GridImageCard props={props} sliceNum={{ a: 6, b: 11 }} />
-          </div>
-        )}
+        <div className={styles.gridconteinter}>
+          <GridImageCard props={props} sliceNum={{ a: 6, b: 11 }} />
+        </div>
       </>
     );
   }

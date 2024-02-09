@@ -8,7 +8,7 @@ const GridImageList = ({ props }) => {
   const { linkbtn, cat } = props;
   const ImagesData = parseJSONdata(ImagesDataJSON);
   const filterdImagesData = filterdImages(cat, ImagesData);
-  console.log(filterdImagesData.length);
+  console.log(filterdImagesData);
 
   if (linkbtn) {
     return (

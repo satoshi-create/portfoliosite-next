@@ -36,8 +36,8 @@ const grafhics = () => {
       />
       <GraphicsDesign
         title={{
-          title1: "グラフィック",
-          title2: "デザイン",
+          title1: "グラフィック"
+            title2: "デザイン",
           linkbtn: false,
           fontClr: "var(--primary-green-01)",
         }}

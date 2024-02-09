@@ -1,15 +1,9 @@
 import React, { useContext } from "react";
 import styles from "../styles/GridImageList.module.css";
 import GridImageCard from "./GridImageCard";
-import { parseJSONdata, filterdImages } from "../func/func";
-import ImagesDataJSON from "../libs/images-data.json";
 
 const GridImageList = ({ props }) => {
-  const { linkbtn, cat } = props;
-  const ImagesData = parseJSONdata(ImagesDataJSON);
-  const filterdImagesData = filterdImages(cat, ImagesData);
-  console.log(filterdImagesData.length);
-
+  const { linkbtn } = props;
   if (linkbtn) {
     return (
       <div className={styles.gridconteinter}>
@@ -22,11 +16,9 @@ const GridImageList = ({ props }) => {
         <div className={styles.gridconteinter}>
           <GridImageCard props={props} sliceNum={{ a: 0, b: 5 }} />
         </div>
-        {filterdImagesData.length > 5 && (
-          <div className={styles.gridconteinter}>
-            <GridImageCard props={props} sliceNum={{ a: 6, b: 11 }} />
-          </div>
-        )}
+        {/* <div className={styles.gridconteinter}>
+          <GridImageCard props={props} sliceNum={{ a: 6, b: 11 }} />
+        </div> */}
       </>
     );
   }

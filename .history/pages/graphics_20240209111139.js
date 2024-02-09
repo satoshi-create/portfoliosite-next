@@ -1,5 +1,5 @@
 import React from "react";
-import ThreedDesign from "../components/threedDesign";
+import GraphicsDesign from "../components/GraphicsDesign";
 import Head from "../components/Meta";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Header from "../components/Header";
@@ -7,18 +7,24 @@ import Footer from "../components/Footer";
 
 const lists = [
   { name: "top", path: "/" },
-  { name: "3D", path: "/threedDesign" },
+  { name: "grafhics", path: "/grafhics" },
 ];
 
-const threedDesign = () => {
+const grafhics = () => {
   return (
     <>
       <Head />
       <Header fixed={false} />
       <Breadcrumbs lists={lists} />
-      <ThreedDesign
+      <CadDesign
         title={{
-          title1: "3Dデザイン",
+          title1: "CADデザイン",
+          linkbtn: false,
+        }}
+      />
+      <GraphicsDesign
+        title={{
+          title1: "グラフィックデザイン",
           linkbtn: false,
         }}
       />
@@ -27,4 +33,4 @@ const threedDesign = () => {
   );
 };
 
-export default threedDesign;
+export default grafhics;

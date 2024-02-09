@@ -140,6 +140,17 @@
     "cat": "2d"
   },
   {
+    "id": "14",
+    "path": "/hitotsumekozou.png",
+    "name": "一つ目小僧",
+    "nameen": "illust-hitotsumekozou",
+    "iconsrc": "/affinity_designer_icon.png",
+    "bgc": "#6fac91",
+    "cover": "TRUE",
+    "tool": "affinity designer",
+    "cat": "3d"
+  },
+  {
     "id": "15",
     "path": "/bijinga.png",
     "name": "三勝",

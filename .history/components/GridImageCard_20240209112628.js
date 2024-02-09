@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import ImagesDataJSON from "../libs/images-data.json";
 import { parseJSONdata, filterdImages } from "../func/func";
 import Image from "next/image";
+import { graphicsDesignImages } from "../libs/graphicsDesignImages";
 import { ZoomIn } from "react-feather";
 import Modal from "./Modal";
 import { ContextComponent } from "../libs/context";

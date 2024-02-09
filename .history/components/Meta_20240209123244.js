@@ -3,7 +3,7 @@ import siteMeta from "../libs/constants";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-// TODO ページごとにOGP画像（pageImg）を作成
+// TODO ページごとにOGP画像を作成
 
 const Meta = ({ pagetitle, pageDesc, pageImg }) => {
   const {

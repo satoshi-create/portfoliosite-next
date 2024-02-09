@@ -17,7 +17,7 @@ const lists = [
 const sites = () => {
   return (
     <>
-      <Head pagetitle={"Sites"} pageDesc={"ウェブサイトのページです"} />
+      <Head pagetitle={"about"} pageDesc={"アバウトページです"} />
       <Head />
       <Header fixed={true} />
       <Breadcrumbs lists={lists} />

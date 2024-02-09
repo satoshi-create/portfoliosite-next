@@ -13,7 +13,7 @@ const lists = [
 const about = () => {
   return (
     <>
-      <Head pagetitle={"About"} pageDesc={"アバウトページです"} />
+      <Head pagetitle={"about"} pageDesc={"アバウトページです"} />
       <Header fixed={true} />
       <Breadcrumbs lists={lists} />
       <About title={{ title1: "自己紹介", bcgClr: false, btn: false }} />

@@ -15,7 +15,7 @@ const lists = [
 const grafhics = () => {
   return (
     <>
-      <Head pagetitle={"Grafhics"} pageDesc={"グラフィックデザインのページです"} />
+      <Head pagetitle={"グラフィック"} pageDesc={"アバウトページです"} />
       <Header fixed={false} />
       <Breadcrumbs lists={lists} />
       <CadDesign

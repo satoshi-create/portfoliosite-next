@@ -2,8 +2,9 @@ import React from "react";
 import siteMeta from "../libs/constants";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Router from "next/dist/server/router";
 
-// TODO ページごとにOGP画像（pageImg）を作成
+// TODO ページごとのOGP画像を作成
 
 const Meta = ({ pagetitle, pageDesc, pageImg }) => {
   const {

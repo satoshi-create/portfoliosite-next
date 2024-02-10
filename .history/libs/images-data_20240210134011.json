@@ -187,8 +187,8 @@
   {
     "id": "19",
     "path": "/wheel.jpg",
-    "name": "wheel",
-    "nameen": "wheel",
+    "name": "box",
+    "nameen": "box",
     "iconsrc": "/fusion360.svg",
     "bgc": "",
     "cover": "FALSE",

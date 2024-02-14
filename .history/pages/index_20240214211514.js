@@ -27,8 +27,8 @@ const index = () => {
       />
       <Card
         value={{
-          sites: projects,
-          title1: "プロジェクト",
+          sites: demos,
+          title1: "デモ",
           title2: "サイト",
           fontClr: "var(--primary-blue-01)",
           bcgClr: "var(--primary-blue-02)",
@@ -45,10 +45,11 @@ const index = () => {
           linkbtn: true,
         }}
       />
+
       <Card
         value={{
-          sites: demos,
-          title1: "デモ",
+          sites: projects,
+          title1: "プロジェクト",
           title2: "サイト",
           fontClr: "var(--primary-blue-01)",
           bcgClr: "var(--primary-blue-02)",
@@ -57,7 +58,6 @@ const index = () => {
           linkbtn: true,
         }}
       />
-
       <GraphicsDesign
         title={{
           title1: "グラフィック",

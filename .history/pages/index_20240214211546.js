@@ -25,6 +25,15 @@ const index = () => {
           linkbtn: true,
         }}
       />
+  
+      <ThreedDesign
+        title={{
+          title1: "3D",
+          title2: "デザイン",
+          fontClr: "var(--primary-green-01)",
+          linkbtn: true,
+        }}
+      />
       <Card
         value={{
           sites: projects,
@@ -37,27 +46,6 @@ const index = () => {
           linkbtn: true,
         }}
       />
-      <ThreedDesign
-        title={{
-          title1: "3D",
-          title2: "デザイン",
-          fontClr: "var(--primary-green-01)",
-          linkbtn: true,
-        }}
-      />
-      <Card
-        value={{
-          sites: demos,
-          title1: "デモ",
-          title2: "サイト",
-          fontClr: "var(--primary-blue-01)",
-          bcgClr: "var(--primary-blue-02)",
-          iconBcgClr: "var(--primary-blue-01)",
-          iconFontClr: "var(--primary-blue-02)",
-          linkbtn: true,
-        }}
-      />
-
       <GraphicsDesign
         title={{
           title1: "グラフィック",

@@ -17,9 +17,9 @@ const index = () => {
       <Header fixed={true} />
       <Hero />
       <About title={{ title1: "自己紹介", bcgClr: true, btn: true }} />
-      <CadDesign
+      <ThreedDesign
         title={{
-          title1: "CAD",
+          title1: "3D",
           title2: "デザイン",
           fontClr: "var(--primary-green-01)",
           linkbtn: true,
@@ -37,9 +37,9 @@ const index = () => {
           linkbtn: true,
         }}
       />
-      <ThreedDesign
+      <GraphicsDesign
         title={{
-          title1: "3D",
+          title1: "グラフィック",
           title2: "デザイン",
           fontClr: "var(--primary-green-01)",
           linkbtn: true,
@@ -58,16 +58,14 @@ const index = () => {
         }}
       />
 
-      <GraphicsDesign
+      <CadDesign
         title={{
-          title1: "グラフィック",
+          title1: "CAD",
           title2: "デザイン",
           fontClr: "var(--primary-green-01)",
           linkbtn: true,
         }}
       />
-      {/* TODO chage site color */}
-
       <Footer />
     </>
   );

@@ -15,17 +15,13 @@ const lists = [
 const grafhics = () => {
   return (
     <>
-      <Head pagetitle={"Grafhics"} pageDesc={"グラフィックデザインのページです"} />
+      <Head
+        pagetitle={"Grafhics"}
+        pageDesc={"グラフィックデザインのページです"}
+      />
       <Header fixed={false} />
       <Breadcrumbs lists={lists} />
-      <CadDesign
-        title={{
-          title1: "CAD",
-          title2: "デザイン",
-          linkbtn: false,
-          fontClr: "var(--primary-green-01)",
-        }}
-      />
+
       <ThreedDesign
         title={{
           title1: "3D",
@@ -37,6 +33,14 @@ const grafhics = () => {
       <GraphicsDesign
         title={{
           title1: "グラフィック",
+          title2: "デザイン",
+          linkbtn: false,
+          fontClr: "var(--primary-green-01)",
+        }}
+      />
+      <CadDesign
+        title={{
+          title1: "CAD",
           title2: "デザイン",
           linkbtn: false,
           fontClr: "var(--primary-green-01)",

@@ -39,7 +39,10 @@ const About = ({ title }) => {
           </div>
 
           <article className={styles.article}>
-            <p className={styles.desc}>{desc}</p>
+            <p
+              className={styles.desc}
+              dangerouslySetInnerHTML={{ __html: desc }}
+            ></p>
             {btn && (
               <div className={styles.aboutbtn}>
                 <Button

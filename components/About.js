@@ -43,6 +43,7 @@ const About = ({ title }) => {
               className={styles.desc}
               dangerouslySetInnerHTML={{ __html: desc }}
             ></p>
+
             {btn && (
               <div className={styles.aboutbtn}>
                 <Button
@@ -65,6 +66,7 @@ const About = ({ title }) => {
             alt="about-image"
           />
         </figure>
+        {/* <img src="/about.png" alt="" /> */}
       </div>
     </section>
   );

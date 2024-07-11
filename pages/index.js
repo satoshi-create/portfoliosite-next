@@ -9,6 +9,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ThreedDesign from "../components/threedDesign";
 import CadDesign from "../components/CadDesign";
+import Skills from "../components/Skills";
 
 const index = () => {
   return (
@@ -17,6 +18,7 @@ const index = () => {
       <Header fixed={true} />
       <Hero />
       <About title={{ title1: "自己紹介", bcgClr: true, btn: true }} />
+      {/* <Skills title={{ title1: "スキル", bcgClr: true, btn: true }} /> */}
       <ThreedDesign
         title={{
           title1: "3D",

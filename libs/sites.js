@@ -6,13 +6,13 @@ export const projects = [
     tag: ["html", "css", "react", "next.js"],
     githubUrl: "",
   },
-  // {
-  //   title: "流域図から眺めるハザードマップ",
-  //   src: "/thumb-ryuuikizu.png",
-  //   url: "https://river-map.vercel.app/ ",
-  //   tag: ["html", "css", "react", "next.js"],
-  //   githubUrl: "https://github.com/satoshi-create/river-map",
-  // },
+  {
+    title: "流域図から眺めるハザードマップ",
+    src: "/thumb-ryuuikizu.png",
+    url: "https://river-map-git-master-satoshicreates-projects.vercel.app/river-maps/nameri-river",
+    tag: ["html", "css", "react", "next.js"],
+    githubUrl: "https://github.com/satoshi-create/river-map",
+  },
   {
     title: "縦書きで覚える百人一首",
     src: "/thumb-tategaki.png",
@@ -20,13 +20,13 @@ export const projects = [
     tag: ["html", "css", "react", "next.js"],
     githubUrl: "",
   },
-  {
-    title: "縦書きで読む古典文学",
-    src: "/thumb-tategaki.png",
-    url: "https://tategaki.netlify.app/",
-    tag: ["html", "css", "javascript", "jquery"],
-    githubUrl: "",
-  },
+  // {
+  //   title: "縦書きで読む古典文学",
+  //   src: "/thumb-tategaki.png",
+  //   url: "https://tategaki.netlify.app/",
+  //   tag: ["html", "css", "javascript", "jquery"],
+  //   githubUrl: "",
+  // },
 ];
 
 export const demos = [

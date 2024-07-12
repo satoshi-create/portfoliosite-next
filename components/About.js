@@ -21,7 +21,7 @@ const About = ({ title }) => {
       <Title title={{ title1 }} />
       <div className={styles.tabcenter}>
         <div className={styles.tabBox}>
-          <div className={styles.tabcontainer}>
+          {/* <div className={styles.tabcontainer}>
             {about.map((item, index) => {
               const { title } = item;
               return (
@@ -36,7 +36,7 @@ const About = ({ title }) => {
                 </button>
               );
             })}
-          </div>
+          </div> */}
 
           <article className={styles.article}>
             <p
